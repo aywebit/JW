@@ -56,16 +56,33 @@
   <!-- Navbar start here -->
   <nav class="navbar navbar-expand-lg navbar-light pb-0">
     <div class="container-fluid">
+      <button class="navbar-toggler px-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.svg" alt="" width="100">
+        <img class="main_logo" src="assets/img/logo.svg" alt="" width="100">
+        <img class="logo_icon" src="assets/img/logo_icon.svg" alt="" width="100">
       </a>
       <form class="search_bar mobile_search_bar">
         <input class="form-control me-2" type="search" placeholder="Search for the product that suits you..." aria-label="Search">
         <a><i class="fa-solid fa-magnifying-glass"></i></a>
       </form>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
+      <div class="navbar_icon_list">
+        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll menu_list d-flex flex-row">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
       <div class="offcanvas offcanvas-end offcanvas_menu" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header align-items-start">
           <a class="navbar-brand" href="#">
@@ -110,16 +127,6 @@
           
           <div class="navbar_icon_list">
             <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll menu_list">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="fa-solid fa-bell"></i>

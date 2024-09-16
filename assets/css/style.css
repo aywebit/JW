@@ -135,6 +135,16 @@ body {
   background: #FFFFFF;
 }
 
+.main_logo {
+  display: block;
+}
+
+.logo_icon {
+  width: 100%;
+  height: 44px;
+  display: none;
+}
+
 .menu {
   position: relative;
 }
@@ -743,6 +753,12 @@ marquee {
 @media only screen and (max-width: 600px) {
   .mobile_search_bar {
     width: 60% !important;
+  }
+  .main_logo {
+    display: none;
+  }
+  .logo_icon {
+    display: block;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
