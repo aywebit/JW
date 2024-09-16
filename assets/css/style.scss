@@ -377,8 +377,8 @@ body{
         }
         
         &.active{
-          color: #051937 !important;
-          background-color: transparent !important; /* Hover effect for button */
+          color: #FFFFFF !important;
+          background-color: #051937 !important; /* Hover effect for button */
           border: 1px solid #051937 !important;
           &:hover{
             color: #FFFFFF !important;
@@ -865,6 +865,80 @@ marquee{
   }
   .logo_icon{
     display: block;
+  }
+  .font_size_14{
+    font-size: 14px !important;
+  }
+  .top_section_2 h6{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  .banner{
+    background-size: cover;
+    background-image: linear-gradient( 90deg, #FFFFFF70, #FFFFFF00), url('../img/banner.png');
+  
+    h2{
+      width: 100%;
+      text-shadow: 2px 1px 3px #05193730;
+    }
+  }
+  .heading1 {
+    font-size: 24px;
+  }
+  .owl-carousel{
+    margin-top: 50px !important;
+    .owl-nav{
+      top: -70px;
+      justify-content: center;
+      padding-left: 40px;
+    }
+  }
+  .sophistication {
+    height: 500px;
+    h2{
+      width: 100%;
+    }
+  }
+  .trending{ 
+    .nav-pills{
+      .nav-item{
+        .nav-link{
+          padding: 8px 12px !important;
+        }
+      }
+    }
+    .trendin_product_col{
+      width: 50%;
+      .product_card_footer_btn{
+        bottom: 0;
+      }
+    }
+  }
+  .home_elementor{
+    img{
+      margin-top: 50px;
+    }
+  }
+  .testimonial{
+    .testimonial_outer{
+      button.slick-prev{
+        left: 39%;
+      }
+      button.slick-next{
+        right: 39%;
+      }
+    }
+  }
+  .footer{
+    .footer_col{
+      margin-top: 30px;
+      &:nth-child(2){
+        padding-left: 10px;
+      }
+    }
+    .footer_bottom{
+      flex-direction: column;
+    }
   }
 }
 
