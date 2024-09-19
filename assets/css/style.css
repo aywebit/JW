@@ -713,7 +713,7 @@ marquee {
 
 /*  breadcrumb start here  */
 .breadcrumb_section {
-  padding: 16px 0;
+  padding: 8px 0;
 }
 .breadcrumb_section .breadcrumb li {
   font-size: 13px;
@@ -723,6 +723,7 @@ marquee {
 /*  breadcrumb end here  */
 .filter_clear_btn {
   font-size: 14px !important;
+  height: 34px;
   text-transform: uppercase;
   background-color: transparent !important; /* Example button background */
   border: 1px solid #051937 !important;
@@ -740,7 +741,7 @@ marquee {
 /* Shop Filter start here */
 .shop_filter .filter_header {
   border-bottom: 1px solid #dee2e6;
-  padding-bottom: 16px;
+  padding-bottom: 7px;
 }
 .shop_filter .filter_header h5 {
   font-size: 18px;
@@ -759,49 +760,93 @@ marquee {
   margin-bottom: 0;
 }
 .shop_filter .filter_type .filter_type_body form label {
+  font-size: 14px;
   color: #6a7987;
 }
 .shop_filter .filter_type .filter_type_body form input {
   width: 100%;
-  height: 40px;
+  height: 34px;
   background: #F1F3F5 !important;
-  font-size: 13px;
+  font-size: 14px;
   color: #B6BDC5;
   border-radius: 0 !important;
   padding: 10px;
 }
 .shop_filter .filter_type .filter_type_body form input:focus {
-  font-size: 16px;
   color: #051937;
   border-color: #051937;
   outline: 0;
   box-shadow: none;
 }
 .shop_filter .filter_type .filter_type_body form .price_label {
-  font-size: 16px;
+  font-size: 14px;
 }
 .shop_filter .filter_type .filter_type_body ul {
   padding: 0;
   margin: 0;
 }
 .shop_filter .filter_type .filter_type_body ul li {
-  padding: 8px 0;
+  padding: 6px 0;
+}
+.shop_filter .filter_type .filter_type_body ul li:first-child {
+  padding-top: 0;
 }
 .shop_filter .filter_type .filter_type_body ul li a {
+  font-size: 14px;
   cursor: pointer;
 }
 .shop_filter .filter_type .filter_type_body ul li a .form-check input, .shop_filter .filter_type .filter_type_body ul li a .form-check label {
   cursor: pointer;
 }
+.shop_filter .filter_type .filter_type_body ul li a .form-check label span {
+  color: #B6BDC5;
+}
 
 /* Shop Filter end here */
 .shop_container .shop_container_header {
+  font-size: 14px;
   border-bottom: 1px solid #dee2e6;
   padding-bottom: 16px;
 }
-.shop_container .shop_container_header .short {
-  width: 200px;
+.shop_container .shop_container_header .short_dropdown {
+  width: auto;
 }
+.shop_container .shop_container_header .short_dropdown label {
+  color: #6a7987;
+}
+.shop_container .shop_container_header .short_dropdown select {
+  width: auto;
+  height: 25px;
+  padding: 0 30px 0 4px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #051937;
+  border-radius: 0;
+}
+
+.remove_filter ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+.remove_filter ul li {
+  float: left;
+  border-left: 1px solid #051937;
+  padding: 0 10px;
+}
+.remove_filter ul li:first-child {
+  border-left: none;
+  padding: 0 10px 0 0;
+}
+.remove_filter ul li .remove_filter_element {
+  font-size: 14px !important;
+  color: #051937;
+  cursor: pointer;
+}
+.remove_filter ul li .remove_filter_element:hover {
+  color: #f03e3e;
+}
+
 /* Large devices (laptops/desktops, 992px and up) --------------------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
   .navbar {
