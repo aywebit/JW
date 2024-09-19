@@ -1012,6 +1012,66 @@ marquee{
   }
 }
 
+body{
+	//dev
+	//height:2000px;
+	padding:10px;
+	padding-bottom:50px;
+}
+h1{
+	margin-bottom:2000px;
+}
+
+.mobile-bottom-nav{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	
+	//give nav it's own compsite layer
+	will-change:transform;
+	transform: translateZ(0);
+	
+	display:flex;	
+	
+	height:50px;
+	
+	box-shadow: 0 -2px 5px -2px #333;
+	background-color:#fff;
+	
+	&__item{
+		flex-grow:1;
+		text-align:center;
+		font-size:12px;
+		
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+	&__item--active{
+		//dev
+		color:red;
+	}
+	&__item-content{ 
+		display:flex;
+		flex-direction:column;		
+	}
+}
+
+.offcanvas.offcanvas-bottom{
+  min-height: 100vh;
+  max-height: calc ( 100vh - 200px ) !important;
+  overflow-y: auto;
+  z-index: 11111 !important;
+}
+.offcanvas.offcanvas-bottom.shop{
+  z-index: 11111 !important;
+}
+
+.mobile-bottom-nav{
+  display: none;
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   
@@ -1028,7 +1088,7 @@ marquee{
   .main_logo{
     display: none;
   }
-  .logo_icon{
+  .logo_icon, .mobile-bottom-nav{
     display: block;
   }
   .font_size_14{
@@ -1116,6 +1176,9 @@ marquee{
     .footer_bottom{
       flex-direction: column;
     }
+  }
+  .product_col{
+    width: 50% !important;
   }
 }
 
