@@ -97,7 +97,7 @@ body {
   position: relative;
 }
 .search_bar input {
-  width: 562px;
+  width: 90vh;
   height: 40px;
   background: #F1F3F5 !important;
   font-size: 13px;
@@ -999,11 +999,11 @@ marquee {
   .trending .trendin_product_col {
     width: 50%;
   }
-  .trending .trendin_product_col .product_card {
+  .product_card {
     padding: 0;
   }
-  .trending .trendin_product_col .product_card .product_card_footer_btn {
-    bottom: 0;
+  .product_card .product_card_footer_btn {
+    bottom: 0 !important;
   }
   .home_elementor {
     padding-top: 0;

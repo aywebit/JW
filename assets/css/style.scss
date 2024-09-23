@@ -91,7 +91,7 @@ body{
 .search_bar{
   position: relative;
   input{
-    width: 562px;
+    width: 90vh;
     height: 40px;
     background: #F1F3F5 !important;
     font-size: 13px;
@@ -1174,12 +1174,18 @@ marquee{
     }
     .trendin_product_col{
       width: 50%;
-      .product_card {
-        padding: 0;
-        .product_card_footer_btn{
-          bottom: 0;
-        }
-      }
+      // .product_card {
+      //   padding: 0;
+      //   .product_card_footer_btn{
+      //     bottom: 0;
+      //   }
+      // }
+    }
+  }
+  .product_card {
+    padding: 0;
+    .product_card_footer_btn{
+      bottom: 0 !important;
     }
   }
   .home_elementor{
