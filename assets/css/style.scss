@@ -1121,9 +1121,11 @@ marquee{
       }
       label{
         color: #6a7987;
+        width: max-content;
       }
       .product_variation_type{
         display: flex;
+        overflow-x: auto;
         span{
           width: auto;
           border: 1px solid #B6BDC5;

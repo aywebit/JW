@@ -991,9 +991,12 @@ marquee {
 }
 .product_detail_form .product_variation .product_variation_row label {
   color: #6a7987;
+  width: -moz-max-content;
+  width: max-content;
 }
 .product_detail_form .product_variation .product_variation_row .product_variation_type {
   display: flex;
+  overflow-x: auto;
 }
 .product_detail_form .product_variation .product_variation_row .product_variation_type span {
   width: auto;
