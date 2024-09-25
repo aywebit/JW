@@ -243,38 +243,119 @@
   <!-- breadcrumb end here -->
 
   <!-- Product page start here -->
-  <section class="product_page">
+  <section class="product_detail_page pt-3">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-5 col-md-5">
-          <div>
-            <img src="assets/img/product/p_3.png" alt="">
+          <div class="product_images">
+            <div class="product_images_list">
+              <ul>
+                <li class="product_images_list_selected">
+                  <img src="assets/img/product/product_detail/product_detail_img_1.jpg" alt="product detail img 1">
+                </li>
+                <li>
+                  <img src="assets/img/product/product_detail/product_detail_img_2.jpg" alt="product detail img 2">
+                </li>
+                <li>
+                  <img src="assets/img/product/product_detail/product_detail_img_3.jpg" alt="product detail img 3">
+                </li>
+                <li>
+                  <img src="assets/img/product/product_detail/product_detail_img_4.jpg" alt="product detail img 4">
+                </li>
+              </ul>
+            </div>
+            <div class="product_img_frame">
+              <img src="assets/img/product/product_detail/product_detail_img_1.jpg" alt="product detail img 1">
+            </div>
           </div>
         </div>
-        <div class="col-lg-7 col-md-7">
+        <div class="col-lg-5 col-md-5">
           <div class="product_details">
-            <div class="product_card_rating product-rating">
+            <div class="product_card_rating product_rating mb-3">
               <i class="fa-solid fa-star"></i>
               <span class="count_text">
                 <strong>3.50</strong> 2 Reviews
               </span>
             </div>
-            <h2 class="product_card_title product-title">
-              <a href="product_detail.html" target="blank">
-                <span>9ct Yellow Gold Rope Chain Bracelet</span>
-              </a>
+            <h2 class="product_title mb-3">
+              9ct Yellow Gold Rope Chain Bracelet
             </h2>
-            <div class="css-1scpojt e1crxpb2">
-              <span class="css-95c3ey textcolor" locale="en_IN">₹1,21,675 </span>
-              <span class="css-y7kufc" locale="en_IN">₹1,40,697 </span>
-              <div class="css-azx60f e1crxpb8">(14%off )</div>
+            <div class="product_price mb-3">
+              <span class="product_price_new me-3">₹1,21,675 </span>
+              <span class="product_price_old me-3">₹1,40,697 </span>
+              <div class="">(14%off )</div>
             </div>
-            <div class="product-inventory-wrapper">
-		
-              <div class="product-stock product-inventory in-stock">In Stock</div>
-              
+            <div class="product_stock_indicator mb-3">
+              <div class="in_stock">
+                <i class="fa-solid fa-check"></i>
+                In Stock
+              </div>
+              <div class="out_stock d-none">
+                <i class="fa-solid fa-xmark"></i>
+                Out of Stock
+              </div>
+            </div>
+            <form class="product_detail_form mb-3">
+              <div class="product_variation">
+                <div class="product_variation_row pb-2">
+                  <label>Gemestone :</label>
+                  <div class="product_variation_type product_gemestone ms-3">
+                    <span class="product_variation_type_selected">Aquamarines</span>
+                    <span class="">Diamonds</span>
+                    <span class="me-0 ">Pearls</span>
+                  </div>
+                </div>
+                <div class="product_variation_row pt-2">
+                  <label>Material :</label>
+                  <div class="product_variation_type product_gemestone ms-3">
+                    <span class="product_variation_type_selected">Gold</span>
+                    <span class="">Rose Gold</span>
+                    <span class="me-0 product_variation_type_not_avail">White Gold</span>
+                  </div>
+                </div>
+                <button class="clear_btn"><i class="fa-solid fa-xmark"></i> Clear</button>
+              </div>
+              <div class="product_variation_buttons">
+                <div class="quantity">
+                  <button class="quantity_button minus"><i class="fa-solid fa-minus"></i></button>
+                  <input type="text" class="quantity_input" name="quantity" value="1" aria-label="Product quantity" size="4" min="1" max="75" step="1" placeholder="" inputmode="numeric" autocomplete="off">
+                  <button class="quantity_button plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <button class="btn btn_2">ADD TO CART</button>
+                <button class="btn btn_1">BUY NOW</button>
+              </div>
+            </form>
+            <div class="product_wishlist">
+              <a>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart d-none"></i>
+                Add to wishlist
+              </a>
+            </div>
+            <div class="product_list_messages">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  Price match
+                </li>
+                <li>
+                  <i class="fa-solid fa-lock"></i>
+                  Safe & secure transaction
+                </li>
+                <li>
+                  <i class="fa-solid fa-cube"></i>
+                  Free delivery on all orders
+                </li>
+                <li>
+                  <i class="fa-solid fa-arrow-rotate-right"></i>
+                  Extended Festivals return policy
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div class="col-lg-2 col-md-2">
+
         </div>
       </div>
     </div>
