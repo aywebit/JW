@@ -1071,6 +1071,7 @@ marquee{
 }
 .product_details{
   .product_title{
+    width: 100vh;
     font-size: 20px;
     color: #051937;
   }
@@ -1103,14 +1104,16 @@ marquee{
   }
 }
 .product_detail_form{
+  width: 100%;
   .product_variation{
     position: relative;
-    width: auto;
+    width: 100vh;
     height: auto;
     border: 1px solid #B6BDC570;
     padding: 16px;
     display: inline-block;
     .product_variation_row{
+      width: 100%;
       display: flex;
       align-items: center;
       font-size: 14px;
@@ -1127,7 +1130,7 @@ marquee{
         display: flex;
         overflow-x: auto;
         span{
-          width: auto;
+          min-width: max-content;
           border: 1px solid #B6BDC5;
           background: #FFFFFF;
           padding: 4px 12px;
