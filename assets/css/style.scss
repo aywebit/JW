@@ -1071,7 +1071,6 @@ marquee{
 }
 .product_details{
   .product_title{
-    width: 100vh;
     font-size: 20px;
     color: #051937;
   }
@@ -1107,7 +1106,7 @@ marquee{
   width: 100%;
   .product_variation{
     position: relative;
-    width: 100vh;
+    width: 100%;
     height: auto;
     border: 1px solid #B6BDC570;
     padding: 16px;
@@ -1476,6 +1475,18 @@ marquee{
   }
   .short_filter_section{
     display: block;
+  }
+  
+  .product_images{
+    .product_images_list{
+      // width: 20%;
+    }
+    .product_img_frame{
+      width: 56%;
+    }
+  }
+  .product_variation{
+    width: 70% !important;
   }
 }
 

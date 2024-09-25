@@ -942,7 +942,6 @@ marquee {
 }
 
 .product_details .product_title {
-  width: 100vh;
   font-size: 20px;
   color: #051937;
 }
@@ -977,7 +976,7 @@ marquee {
 }
 .product_detail_form .product_variation {
   position: relative;
-  width: 100vh;
+  width: 100%;
   height: auto;
   border: 1px solid rgba(182, 189, 197, 0.4392156863);
   padding: 16px;
@@ -1267,6 +1266,12 @@ marquee {
   }
   .short_filter_section {
     display: block;
+  }
+  .product_images .product_img_frame {
+    width: 56%;
+  }
+  .product_variation {
+    width: 70% !important;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
