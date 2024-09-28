@@ -1382,7 +1382,7 @@ marquee{
 }
 
 #filter_offcanvas{
-  top: -1px !important;
+  // top: -1px !important;
   .offcanvas-body{
     max-height: calc( 100vh - 117px );
   }

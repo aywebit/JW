@@ -1201,9 +1201,6 @@ marquee {
   z-index: 11111 !important;
 }
 
-#filter_offcanvas {
-  top: -1px !important;
-}
 #filter_offcanvas .offcanvas-body {
   max-height: calc(100vh - 117px);
 }
