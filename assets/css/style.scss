@@ -1380,13 +1380,20 @@ marquee{
 .offcanvas.offcanvas-bottom.shop{
   z-index: 11111 !important;
 }
-.offcanvas-footer{
-  .offcanvas_footer_btn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    button{
-      width: 48% !important;
+
+#filter_offcanvas{
+  top: -1px !important;
+  .offcanvas-body{
+    max-height: calc( 100vh - 117px );
+  }
+  .offcanvas-footer{
+    .offcanvas_footer_btn{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button{
+        width: 48% !important;
+      }
     }
   }
 }
