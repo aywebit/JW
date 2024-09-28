@@ -1205,6 +1205,7 @@ marquee {
   bottom: auto !important;
 }
 #filter_offcanvas .offcanvas-body {
+  min-height: calc(100vh - 117px);
   max-height: calc(100vh - 117px);
 }
 #filter_offcanvas .offcanvas-footer .offcanvas_footer_btn {

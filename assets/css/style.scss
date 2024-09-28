@@ -1385,6 +1385,7 @@ marquee{
   // top: -1px !important;
   bottom: auto !important;
   .offcanvas-body{
+    min-height: calc( 100vh - 117px );
     max-height: calc( 100vh - 117px );
   }
   .offcanvas-footer{
