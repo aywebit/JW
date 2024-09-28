@@ -1190,7 +1190,7 @@ marquee {
     position: static;
   }
 }
-.offcanvas.offcanvas-bottom {
+#short_offcanvas.offcanvas-bottom {
   min-height: 100vh;
   max-height: calc(100vh - 200px) !important;
   overflow-y: auto;
@@ -1203,6 +1203,7 @@ marquee {
 
 #filter_offcanvas {
   bottom: auto !important;
+  min-height: 100vh;
 }
 #filter_offcanvas .offcanvas-body {
   min-height: calc(100vh - 117px);

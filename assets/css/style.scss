@@ -1371,7 +1371,7 @@ marquee{
 // 	}
 // }
 
-.offcanvas.offcanvas-bottom{
+#short_offcanvas.offcanvas-bottom{
   min-height: 100vh;
   max-height: calc( 100vh - 200px ) !important;
   overflow-y: auto;
@@ -1384,6 +1384,7 @@ marquee{
 #filter_offcanvas{
   // top: -1px !important;
   bottom: auto !important;
+  min-height: 100vh;
   .offcanvas-body{
     min-height: calc( 100vh - 117px );
     max-height: calc( 100vh - 117px );
