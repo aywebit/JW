@@ -1204,6 +1204,8 @@ marquee {
 #filter_offcanvas {
   bottom: auto !important;
   min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
 }
 #filter_offcanvas .offcanvas-body {
   min-height: calc(100vh - 117px);
