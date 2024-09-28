@@ -1383,6 +1383,7 @@ marquee{
 
 #filter_offcanvas{
   // top: -1px !important;
+  bottom: auto !important;
   .offcanvas-body{
     max-height: calc( 100vh - 117px );
   }
