@@ -31,6 +31,12 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+  
+<!-- CSS STYLE-->
+<link rel="stylesheet" type="text/css" href="assets/css/xzoom.css" media="all" />
+
+
 </head>
 <body>
 
@@ -61,9 +67,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          Shop
-          <!-- <img class="main_logo" src="assets/img/logo.svg" alt="" width="100">
-          <img class="logo_icon" src="assets/img/logo_icon.svg" alt="" width="100"> -->
+          <img class="main_logo" src="assets/img/logo.svg" alt="" width="100">
+          <img class="logo_icon" src="assets/img/logo_icon.svg" alt="" width="100">
         </a>
       </div>
       <!-- <form class="search_bar mobile_search_bar">
@@ -247,26 +252,16 @@
   <section class="product_detail_page pt-3">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-5 col-md-5">
+        <div class="col-lg-4 col-md-4">
           <div class="product_images">
-            <div class="product_images_list">
-              <ul>
-                <li class="product_images_list_selected">
-                  <img src="assets/img/product/product_detail/product_detail_img_1.jpg" alt="product detail img 1">
-                </li>
-                <li>
-                  <img src="assets/img/product/product_detail/product_detail_img_2.jpg" alt="product detail img 2">
-                </li>
-                <li>
-                  <img src="assets/img/product/product_detail/product_detail_img_3.jpg" alt="product detail img 3">
-                </li>
-                <li>
-                  <img src="assets/img/product/product_detail/product_detail_img_4.jpg" alt="product detail img 4">
-                </li>
-              </ul>
-            </div>
-            <div class="product_img_frame">
-              <img src="assets/img/product/product_detail/product_detail_img_1.jpg" alt="product detail img 1">
+            <div class="xzoom-container">
+              <img class="xzoom" id="xzoom-default" src="images/gallery/preview/01_b_car.jpg" xoriginal="images/gallery/original/01_b_car.jpg" />
+              <div class="xzoom-thumbs">
+                <a href="images/gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="images/gallery/thumbs/01_b_car.jpg"  xpreview="images/gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                <a href="images/gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="images/gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                <a href="images/gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="images/gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                <a href="images/gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="images/gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+              </div>       
             </div>
           </div>
         </div>
@@ -522,282 +517,7 @@
     </div>
   </section>
   <!-- Footer end here -->
-
-  <!-- <nav class="mobile-bottom-nav">
-    <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
-      <div class="mobile-bottom-nav__item-content">
-        <i class="fa-solid fa-house"></i>
-        Home
-      </div>		
-    </div>
-    <div class="mobile-bottom-nav__item">		
-      <div class="mobile-bottom-nav__item-content">
-        <i class="fa-solid fa-cart-shopping"></i>
-        Shop
-      </div>
-    </div>
-    <div class="mobile-bottom-nav__item">
-      <div class="mobile-bottom-nav__item-content" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter_offcanvas" aria-controls="filter_offcanvas">
-        <i class="fa-solid fa-filter"></i>
-        Filter
-      </div>		
-    </div>
-    
-    <div class="mobile-bottom-nav__item">
-      <div class="mobile-bottom-nav__item-content">
-        <i class="fa-solid fa-user"></i>
-        My Profile
-      </div>		
-    </div>
-  </nav> -->
-
-
-  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="filter_offcanvas" aria-labelledby="filter_offcanvasLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="filter_offcanvasLabel"></h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      
-      <div class="shop_filter">
-        <div class="filter_header d-flex align-items-center justify-content-between">
-          <h5 class="mb-0">FILTERS</h5>
-          <button class="btn filter_clear_btn">CLEAR ALL</button>
-        </div>
-        <div class="filter_type">
-          <div class="filter_type_header">
-            <h6>WIDGET PRICE FILTER</h6>
-          </div>
-          <div class="filter_type_body">
-            <form>
-              <div class="row d-flex justify-content-between">
-                <div class="col-lg-6 mb-3">
-                  <label for="filter_type_min_price" class="form-label">Min Price</label>
-                  <input type="text" class="form-control" id="filter_type_min_price" aria-describedby="emailHelp">
-                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-                </div>
-                <div class="col-lg-6 mb-3">
-                  <label for="filter_type_max_price" class="form-label">Max Price</label>
-                  <input type="text" class="form-control" id="filter_type_max_price">
-                </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="price_label">
-                  Price: <span class="from">$50</span> — <span class="to">$1000</span>
-                </div>
-                <button type="submit" class="btn btn_1">FILTER</button>
-              </div>
-              
-            </form>
-          </div>
-        </div>
-        <div class="filter_type">
-          <div class="filter_type_header">
-            <h6>PRODUCT CATEGORIES</h6>
-          </div>
-          <div class="filter_type_body">
-            <ul>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Bracelets_flexCheckDefault" checked>
-                    <label class="form-check-label" for="Bracelets_flexCheckDefault">
-                      Bracelets
-                      <span>(1565)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Earrings_flexCheckDefault">
-                    <label class="form-check-label" for="Earrings_flexCheckDefault">
-                      Earrings
-                      <span>(2455)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Gold_Set_flexCheckDefault">
-                    <label class="form-check-label" for="Gold_Set_flexCheckDefault">
-                      Gold Set
-                      <span>(1988)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Necklaces_flexCheckDefault">
-                    <label class="form-check-label" for="Necklaces_flexCheckDefault">
-                      Necklaces
-                      <span>(983)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="RingsflexCheckDefault">
-                    <label class="form-check-label" for="RingsflexCheckDefault">
-                      Rings
-                      <span>(3548)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="filter_type">
-          <div class="filter_type_header">
-            <h6>FILTER BY MATERIAL</h6>
-          </div>
-          <div class="filter_type_body">
-            <ul>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="gold_flexCheckDefault">
-                    <label class="form-check-label" for="gold_flexCheckDefault">
-                      Gold
-                      <span>(8746)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Platinum_flexCheckDefault">
-                    <label class="form-check-label" for="Platinum_flexCheckDefault">
-                      Platinum
-                      <span>(3845)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="rose_gold_flexCheckDefault">
-                    <label class="form-check-label" for="rose_gold_flexCheckDefault">
-                      Rose Gold
-                      <span>(1754)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="silk_flexCheckDefault">
-                    <label class="form-check-label" for="silk_flexCheckDefault">
-                      Silk
-                      <span>(745)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Sterling_Silver_flexCheckDefault">
-                    <label class="form-check-label" for="Sterling_Silver_flexCheckDefault">
-                      Sterling Silver
-                      <span>(855)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="white_gold_flexCheckDefault">
-                    <label class="form-check-label" for="white_gold_flexCheckDefault">
-                      White Gold
-                      <span>(658)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="filter_type">
-          <div class="filter_type_header">
-            <h6>FILTER BY BRANDS</h6>
-          </div>
-          <div class="filter_type_body">
-            <ul>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Calvin_Klein_flexCheckDefault">
-                    <label class="form-check-label" for="Calvin_Klein_flexCheckDefault">
-                      Calvin Klein
-                      <span>(75)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Emporio_Armani_flexCheckDefault">
-                    <label class="form-check-label" for="Emporio_Armani_flexCheckDefault">
-                      Emporio Armani
-                      <span>(35)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Chopard_flexCheckDefault">
-                    <label class="form-check-label" for="Chopard_flexCheckDefault">
-                      Chopard
-                      <span>(28)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="boss_flexCheckDefault">
-                    <label class="form-check-label" for="boss_flexCheckDefault">
-                      BOSS
-                      <span>(42)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="gucci_RingsflexCheckDefault">
-                    <label class="form-check-label" for="gucci_RingsflexCheckDefault">
-                      GUCCI
-                      <span>(36)</span>
-                    </label>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+     
   
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -811,11 +531,26 @@
 <!-- custom js -->
 <script src="js/custom.js"></script>
 
+<!-- XZOOM JQUERY PLUGIN  -->
+<script type="text/javascript" src="assets/js/xzoom.min.js"></script>
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
+  $(document).ready(function() {
+    //Integration with "Magnific Popup" plugin
+   $(".xzoom, .xzoom-gallery").xzoom();
+
+
+  });
+   
+</script>
+<script>
+  
   $(document).ready(function() {
     $('.menu_list li a').click(function() {
       $('.menu_list li a').removeClass('active');
