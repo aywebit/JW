@@ -1,1400 +1,713 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JW_ADITYA</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
-
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YadavAditya</title>
+    <!-- google font -->
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
+
 <body>
-
-  
-  <div class="top_section_1 destop_top_section_1">
-    <h6>Up to 40% Off Everything</h6>
-    <h6>30% Off Most Loveled - New Lines Added</h6>
-    <h6>Free Delivery for Next 3 Orders</h6>
-  </div>
-  
-  <marquee behavior="" direction="" scrollamount="5">
-    <div class="top_section_1 mobile_top_section_1">
-      <h6 class="font_size_14">Up to 40% Off Everything</h6>
-      <h6 class="font_size_14">30% Off Most Loveled - New Lines Added</h6>
-      <h6 class="font_size_14">Free Delivery for Next 3 Orders</h6>
-    </div>
-  </marquee>
-  </div>
-  <div class="top_section_2">
-    <h6 class="font_size_14">20% Off Everything With a Min. Spend, Sale Ends In: 77 <span>Days</span> : 04 <span>Hrs</span> : 58 <span>Mins</span></h6>
-  </div>
-  
-  <!-- Navbar start here -->
-  <nav class="navbar navbar-expand-lg navbar-light pb-0">
-    <div class="container-fluid">
-      <div class="d-flex">
-        <button class="navbar-toggler px-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-expanded="false">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-          <img class="main_logo" src="assets/img/logo.svg" alt="" width="100">
-          <img class="logo_icon" src="assets/img/logo_icon.svg" alt="" width="100">
-        </a>
-      </div>
-      <!-- <form class="search_bar mobile_search_bar">
-        <input class="form-control me-2" type="search" placeholder="Search for the product that suits you..." aria-label="Search">
-        <a><i class="fa-solid fa-magnifying-glass"></i></a>
-      </form> -->
-
-      <div class="navbar_icon_list mobile_navbar_icon_list">
-        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll menu_list d-flex flex-row">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </li>
-          <li class="nav-item ms-3">
-            <a class="nav-link" href="#">
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </li>
-          <li class="nav-item ms-3">
-            <a class="nav-link" href="#">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </li>
-          <li class="nav-item ms-3">
-            <a class="nav-link" href="#">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="offcanvas offcanvas-start offcanvas_menu" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header offcanvas_menu_header align-items-start">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo.svg" alt="" width="100">
-          </a>
-          <button type="button" class="offcanvas_menu_close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-left-long"></i></button>
-        </div>
-        <div class="offcanvas-body offcanvas_menu_body pt-0">
-          <div class="d-flex flex-column align-items-center">
-            <ul class="navbar-nav mt-2 my-lg-0 menu_list w-100">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Category</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html"><i class="fa-solid fa-shop"></i>Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-cubes"></i>Ready Stock</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-cart-flatbed"></i>View Cart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-cube"></i>My Order</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>My Wishlist</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i>My Notification</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-user"></i>My Account</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i>About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-headset"></i>Help Center</a>
-              </li>
-              
-            </ul>
-          </div>
-          
-          <div class="navbar_icon_list d-none">
-            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll menu_list">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa-solid fa-user"></i>
+    <!-- header -->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    YadavAditya
                 </a>
-              </li>
-            </ul>
-          </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">My Intro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#journey">Journey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#progress">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
         </div>
-      </div>
+    </header>
+    <!-- //header -->
 
-
-
-
-      <div class="collapse navbar-collapse justify-content-center menu desktop_menu" id="">
-        <div class="d-flex flex-column align-items-center">
-          <form class="search_bar">
-            <input class="form-control me-2" type="search" placeholder="Search for the product that suits you..." aria-label="Search">
-            <a><i class="fa-solid fa-magnifying-glass"></i></a>
-          </form>
-          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll menu_list">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page"  href="index.html">Home</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Category</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ready Stock</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">View Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Track Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            
-          </ul>
+    <!-- banner section -->
+    <section class="ay-banner py-5" id="home">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center pt-4">
+                <div class="col-md-6 banner-left pe-xl-5">
+                    <h4>Hi, I'm Aditya Yadav</h4>
+                    <h3 class="mb-3 mt-1">Designer</h3>
+                    <p class="banner-sub me-md-5">I love to work in UI/UX designing.
+                        I always try my best to make good UI with the best UX.
+                    </p>
+                    <div class="d-flex align-items-center buttons-banner mt-sm-5 mt-4">
+                        <a href="index.html" class="btn btn-style me-2">Hire Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
         </div>
         
-        <div class="navbar_icon_list">
-          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll menu_list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fa-solid fa-heart"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fa-solid fa-user"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        
+    </section>
+    <!-- //banner section -->
 
-
-
-    </div>
-  </nav>
-  <!-- Navbar end here -->
-
-  <!-- Banner start here -->
-  <section class="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>Earrings for  
-            Sophisticated Style 
-            Delicate</h2>
-            <p>Unique and trending jewellery</p>
-            <button class="btn btn_1">Shop Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Banner end here -->
-
-  <!-- Discover By Category Start here -->
-  <section class="accessories mobile_section_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="text-center heading1 mb-2">Discover By Category</h1>
-          <p class="text-center sub_heading1 mb-4">Explore Our Exquisite Collections by Category to Find Your Ideal Jewelry Piece</p>
-
-          <div class="row owl-carousel owl-theme d-inline-flex">
-            <div class="item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/collections_chains_1__31294.original.jpg" width="100%" alt="">
+    <!-- grids section -->
+    <section class="ay-bottom-grids-6 pt-sm-5 pb-5" id="features">
+        <div class="container pt-lg-4">
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                <div class="col-md-3 col-sm-4 ps-xl-5">
+                    <h4 class="ab-exper-count mb-sm-4 ps-lg-4">2+</h4>
+                    <p class="ab-content ps-lg-4">years of experience working</p>
                 </div>
-                <div class="home_card_detail">
-                  <h5>
-                  Chains
-                  </h5>
-                  <p>Celebrate Golden Hour around-the-clock</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            <div class="item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/collections_necklaces_2__94552.original.jpg" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    Necklaces
-                  </h5>
-                  <p>Mininal chic meets striking layers</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            <div class="item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/collections_earrings_3__66895.original.jpg" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    Earrings
-                  </h5>
-                  <p>Studs, Hoops, and everything in between</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            <div class="item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/collections_bracelets_4__42050.original.jpg" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    Bracelets
-                  </h5>
-                  <p>The sweetest pieces of arm candy</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            <div class="item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/collections_chokers_5__13744.original.jpg" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    Chokers
-                  </h5>
-                  <p>The perfect fit every time</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            <div class="item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/collections_rings_7__27698.original.jpg" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    Rings
-                  </h5>
-                  <p>Transform your stack into a story</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Discover By Category end here -->
-
-  <!-- sophistication start here -->
-
-  <section class="sophistication">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <h6 class="mb-3">UP TO 30% OFF</h6>
-                <h2 class="mb-1">Diamond Engagement Rings</h2>
-                <p>Find Your Perfect Match In Our Wedding Ring Collection</p>
-                <button class="btn btn_1 mt-4">Shop Now</button>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- <section class="sophistication">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Refined Sophistication</h2>
-                <p>These rings often feature sleek and minimalist designs crafted from high-quality materials such as platinum,..</p>
-            </div>
-        </div>
-    </div>
-  </section> -->
-
-  <!-- sophistication end here -->
-
-  <!-- trending start here -->
-
-  <section class="trending mobile_section_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-              <h1 class="text-center heading1 mb-2">Trending Products</h1>
-              <p class="text-center sub_heading1 mb-4">Journey To Making Fashion Dreams Come True In Elements Jewellers</p>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12  mb-2">
-              <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link me-2 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">FEATURED</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link me-2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TOP SELLING</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">NEW ARRIVALS</button>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                <div class="row">
-
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
+                <div class="col-xl-8 col-md-9 col-sm-8 offset-xl-1 ps-xl-0 pe-xl-5 mt-sm-0 mt-4">
+                    <h3 class="title-style mb-sm-5 mb-4">I'm a designer & developer with a passion for web design</h3>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 grids-feature">
+                            <div class="area-box active">
+                                <div class="icon-style">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h4><a href="#feature" class="title-head">UI/UX Design</a></h4>
+                                <!-- <a href="#" class="btn more p-0">Explore More<i
+                                        class="fas fa-long-arrow-alt-right ms-1"></i></a> -->
+                            </div>
                         </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
+                        <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+                            <div class="area-box">
+                                <div class="icon-style">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h4><a href="#feature" class="title-head">Web Design</a></h4>
+                                <!-- <a href="#" class="btn more p-0">Explore More<i
+                                        class="fas fa-long-arrow-alt-right ms-1"></i></a> -->
+                            </div>
                         </div>
-                        <div class="product_card_img">
-                          <a href="product_detail.html" target="blank">
-                            <img src="assets/img/product/p_1.png" alt="Product">
-                          </a>
+                        <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+                            <div class="area-box">
+                                <div class="icon-style">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h4><a href="#feature" class="title-head">Web Development</a></h4>
+                                <!-- <a href="#" class="btn more p-0">Explore More<i
+                                        class="fas fa-long-arrow-alt-right ms-1"></i></a> -->
+                            </div>
                         </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //grids section -->
+
+    <!-- about section -->
+    <section class="ay-aboutblock1 pt-lg-5 pt-2 pb-5" id="about">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="position-relative">
+                        <img src="assets/images/about.jpeg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 ps-lg-5 mt-lg-0 mt-5">
+                    <h5 class="title-small mb-1">My Intro</h5>
+                    <h3 class="title-style">About Me</h3>
+                    <p class="mt-3">My journey as a UI/UX Designer has been nothing short of an incredible adventure.
+                        I've always believed that design is a way to make the complex appear beautifully simple, and
+                        I've dedicated myself to turning this belief into reality. My work revolves around creating
+                        digital experiences that not only look great but also function flawlessly.</p>
+                    <div class="my-info mt-md-5 mt-4">
+                        <ul class="single-info">
+                            <li class="name-style">Name</li>
+                            <li>:</li>
+                            <li>
+                                <p>Aditya Yadav</p>
+                            </li>
+                        </ul>
+                        <ul class="single-info">
+                            <li class="name-style">Age</li>
+                            <li>:</li>
+                            <li>
+                                <p>26 Years</p>
+                            </li>
+                        </ul>
+                        <ul class="single-info">
+                            <li class="name-style">From</li>
+                            <li>:</li>
+                            <li>
+                                <p>Mumbai, India</p>
+                            </li>
+                        </ul>
+                        <ul class="single-info">
+                            <li class="name-style">Email</li>
+                            <li>:</li>
+                            <li>
+                                <p><a href="mailto:aywebit@mail.com">aywebit@mail.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#download" class="btn btn-style mt-5">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //about section -->
+
+    <!-- qualification section -->
+    <section class="ay-timeline-1 py-5" id="journey">
+        <div class="container py-lg-5 py-4">
+            <div class="title-heading-w3 text-center mb-sm-5 mb-4">
+                <h5 class="title-small">Resume</h5>
+                <h3 class="title-style">Awesome Journey</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="sub-title-timeline"><i class="fas fa-graduation-cap"></i> Education</h5>
+                    <div class="timeline">
+                        <div class="column">
+                            <div class="title">
+                                <h2>Diploma in Web Designing & Development</h2>
+                            </div>
+                            <div class="description">
+                                <p>Shankar Multimedia</p>
+                                <h6><i class="fas fa-calendar-alt"></i> 2021</h6>
+                            </div>
                         </div>
+                        <div class="column">
+                            <div class="title">
+                                <h2>Certification in Graphic Designing</h2>
+                            </div>
+                            <div class="description">
+                                <p>Shankar Multimedia</p>
+                                <h6><i class="fas fa-calendar-alt"></i> 2018</h6>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title">
+                                <h2>B.Sc. in Information Technology</h2>
+                            </div>
+                            <div class="description">
+                                <p>University of Mumbai</p>
+                                <h6><i class="fas fa-calendar-alt"></i> 2018</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-lg-0 mt-4">
+                    <h5 class="sub-title-timeline"><i class="fas fa-briefcase"></i> Experience</h5>
+                    <div class="timeline">
+                        <div class="column">
+                            <div class="title">
+                                <h2>UI Designer</h2>
+                            </div>
+                            <div class="description">
+                                <p>Planfirma Technologies Pvt. Lmt.</p>
+                                <h6><i class="fas fa-calendar-alt"></i> 2023 - Present</h6>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title">
+                                <h2>UI Designer</h2>
+                            </div>
+                            <div class="description">
+                                <p>Strikingspear Consultancy Pvt. Ltd.</p>
+                                <h6><i class="fas fa-calendar-alt"></i> 2021 - 2023</h6>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title">
+                                <h2>Graphic Artist</h2>
+                            </div>
+                            <div class="description">
+                                <p>Powerweave Software Services Pvt. Ltd.</p>
+                                <h6><i class="fas fa-calendar-alt"></i> 2018 - 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //qualification section -->
+
+    <!-- skills section -->
+    <section class="ay-progress py-5" id="progress">
+        <div class="container py-md-5 py-4">
+            <div class="title-heading-w3 text-center mb-sm-5 mb-4">
+                <h5 class="title-small mb-1">My Skills</h5>
+                <h3 class="title-style">My Expertise Area</h3>
+            </div>
+            <div class="row py-lg-4">
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="progress-info info1">
+                        <h6 class="progress-tittle">Web Design <span class="">80%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-1" role="progressbar"
+                                style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info2">
+                        <h6 class="progress-tittle">HTML/CSS <span class="">95%</span>
+                        </h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-2" role="progressbar"
+                                style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info3">
+                        <h6 class="progress-tittle">JavaScript <span class="">60%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-3" role="progressbar"
+                                style="width: 60%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info4 mb-0">
+                        <h6 class="progress-tittle">React JS <span class="">85%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-4" role="progressbar"
+                                style="width: 85%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5 mt-lg-0 mt-5">
+                    <div class="progress-info info1">
+                        <h6 class="progress-tittle">Vue Js <span class="">80%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-1" role="progressbar"
+                                style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info2">
+                        <h6 class="progress-tittle">Bootstrap <span class="">95%</span>
+                        </h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-2" role="progressbar"
+                                style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info3">
+                        <h6 class="progress-tittle">Graphic Design <span class="">60%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-3" role="progressbar"
+                                style="width: 60%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-info info4 mb-0">
+                        <h6 class="progress-tittle">UI/UX Design <span class="">85%</span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped gradient-4" role="progressbar"
+                                style="width: 85%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //skills section -->
+
+    <!-- projects section -->
+    <section class="ay-gallery pb-5" id="gallery">
+        <div class="container py-md-5 py-4">
+            <div class="title-heading-w3 text-center mb-sm-5 mb-4">
+                <h5 class="title-small mb-1">Portfolio</h5>
+                <h3 class="title-style">My most recent project</h3>
+                <!-- <h3 class="title-style">Some of my most recent projects</h3> -->
+            </div>
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="row g-0  rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">E-Comm</strong>
+                        <h3 class="mb-0">Jewellery website</h3>
+                        <div class="mb-1 text-muted mb-4">Oct 11</div>
+                        <p class="mb-auto">This jewelry website project focuses on providing a beautiful and user-friendly platform to showcase unique, high-quality jewelry pieces. The website will offer detailed descriptions, high-resolution images, and easy navigation to help customers find the perfect pieces. It will include a secure, streamlined checkout process, allowing for an enjoyable and safe shopping experience. The project also aims to highlight the craftsmanship, materials, and story behind each piece, fostering a personal connection with customers and enhancing their shopping experience.</p>
+                        <a href="JW/index_JW.html" class="stretched-link" style="width: fit-content; background: #0d6efd20;" target="_blank">Go To Website</a>
                       </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
+                      <div class="col-auto d-none d-lg-block">
+                        <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div style="width: 300px; min-height: 300px; max-height: 400px; overflow-x: hidden; overflow-y: auto;">
+                            <img class="card-img-bottom d-block" src="assets/images/project_1.png" alt="Card image cap">
+                      
                         </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="product_detail.html" target="blank">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
+                    </div>
                     </div>
                   </div>
-
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="product_detail.html" target="blank">
-                            <img src="assets/img/product/p_1.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="product_detail.html" target="blank">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="product_detail.html" target="blank">
-                            <img src="assets/img/product/p_1.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="product_detail.html" target="blank">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="product_detail.html" target="blank">
-                            <img src="assets/img/product/p_1.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="product_detail.html" target="blank">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+                <!-- <div class="col-lg-4 col-md-6 item">
+                    <a href="assets/images/g1.jpg" data-lightbox="example-set" data-title="Project 1"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/g1.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 1</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
                 </div>
-              </div>
-
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <div class="row">
-                  
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="product_detail.html" target="blank">
-                            <img src="assets/img/product/p_2.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="product_detail.html" target="blank">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_2.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_2.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_2.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
+                <div class="col-lg-4 col-md-6 item mt-md-0 mt-4">
+                    <a href="assets/images/g2.jpg" data-lightbox="example-set" data-title="Project 2"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/g2.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 2</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                <div class="row">
-                  
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
+
+                <div class="col-lg-4 col-md-6 item mt-lg-0 mt-4">
+                    <a href="assets/images/g3.jpg" data-lightbox="example-set" data-title="Project 3"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/g3.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 3</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+                    <a href="assets/images/g5.jpg" data-lightbox="example-set" data-title="Project 4"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/g5.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 4</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+                    <a href="assets/images/g6.jpg" data-lightbox="example-set" data-title="Project 5"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/g6.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 5</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+                    <a href="assets/images/g4.jpg" data-lightbox="example-set" data-title="Project 6"
+                        class="zoom d-block">
+                        <img class="card-img-bottom d-block" src="assets/images/g4.jpg" alt="Card image cap">
+                        <span class="overlay__hover"></span>
+                        <span class="hover-content">
+                            <span class="title">Project 6</span>
+                            <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
+                        </span>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- //projects section -->
+
+    <!-- testimonials section -->
+    <!-- <section class="ay-testimonials py-5" id="testimonials">
+        <div class="container py-md-5 py-4">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="owl-two owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="slider-info mt-lg-4 mt-3">
+                                <div class="message">
+                                    <img src="assets/images/quote.png" alt="" class="img-fluid mb-2" />
+                                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                                            accusantium
+                                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                                            quibusdam tenetur.</q></p>
+                                    <div class="name mt-4 mb-4">
+                                        <h4>Phillip Hunt</h4>
+                                        <p>Subtitle goes here</p>
+                                    </div>
+                                </div>
+                                <div class="img-circle">
+                                    <img src="assets/images/c1.jpg" class="img-fluid radius-image" alt="client">
+                                </div>
+                            </div>
                         </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
+                        <div class="item">
+                            <div class="slider-info mt-lg-4 mt-3">
+                                <div class="message">
+                                    <img src="assets/images/quote.png" alt="" class="img-fluid mb-2" />
+                                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                                            accusantium
+                                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                                            quibusdam tenetur.</q></p>
+                                    <div class="name mt-4 mb-4">
+                                        <h4>Sara Grant</h4>
+                                        <p>Subtitle goes here</p>
+                                    </div>
+                                </div>
+                                <div class="img-circle">
+                                    <img src="assets/images/c2.jpg" class="img-fluid radius-image" alt="client">
+                                </div>
+                            </div>
                         </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_3.png" alt="Product">
-                          </a>
+                        <div class="item">
+                            <div class="slider-info mt-lg-4 mt-3">
+                                <div class="message">
+                                    <img src="assets/images/quote.png" alt="" class="img-fluid mb-2" />
+                                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                                            accusantium
+                                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                                            quibusdam tenetur.</q></p>
+                                    <div class="name mt-4 mb-4">
+                                        <h4>Luke Jacobs</h4>
+                                        <p>Subtitle goes here</p>
+                                    </div>
+                                </div>
+                                <div class="img-circle">
+                                    <img src="assets/images/c3.jpg" class="img-fluid radius-image" alt="client">
+                                </div>
+                            </div>
                         </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
+                        <div class="item">
+                            <div class="slider-info mt-lg-4 mt-3">
+                                <div class="message">
+                                    <img src="assets/images/quote.png" alt="" class="img-fluid mb-2" />
+                                    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id
+                                            accusantium
+                                            officia quod quasi necessitatibus perspiciatis Harum error provident
+                                            quibusdam tenetur.</q></p>
+                                    <div class="name mt-4 mb-4">
+                                        <h4>Claire Olson</h4>
+                                        <p>Subtitle goes here</p>
+                                    </div>
+                                </div>
+                                <div class="img-circle">
+                                    <img src="assets/images/c4.jpg" class="img-fluid radius-image" alt="client">
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_3.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_3.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 trendin_product_col">
-                    <div class="product_card">
-                      <div class="product_card_top">
-                        <div class="product_card_badges">
-                          <span class="sale">30%</span>
-                        </div>
-                        <div class="product_card_badges_icon_buttons">
-                          <button class="btn product_card_badges_icon_btn product_card_wishlist_btn">
-                            <i class="fa-regular fa-heart"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_view_btn">
-                            <i class="fa-regular fa-eye"></i>
-                          </button>
-                          <button class="btn product_card_badges_icon_btn product_card_compare_btn">
-                            <i class="fa-solid fa-repeat"></i>
-                          </button>
-                        </div>
-                        <div class="product_card_img">
-                          <a href="#">
-                            <img src="assets/img/product/p_3.png" alt="Product">
-                          </a>
-                        </div>
-                        <div class="product_card_footer_btn">
-                          <button class="btn product_card_add_cart_btn">ADD TO CART</button>
-                        </div>
-                      </div>
-                      <div class="product_card_detail content-wrapper">
-                        <div class="product_card_type product-brand">
-                          <a href="#" rel="tag">Bracelets</a>
-                        </div>
-                        <h2 class="product_card_title product_title">
-                          <a href="#">
-                            <span>9ct Yellow Gold Rope Chain Bracelet</span>
-                          </a>
-                        </h2>
-                        <div class="product_card_price">
-                          <span>$175.55</span>
-                          <!-- <span>$124.19</span> -->
-                        </div>
-                        <div class="product_card_rating product_rating">
-                          <i class="fa-solid fa-star"></i>
-                          <span class="count_text">
-                            <strong>3.50</strong> 2 Reviews
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-
         </div>
-    </div>
-  </section>
+    </section> -->
+    <!-- //testimonials section -->
 
-  <!-- trending end here -->
-
-  <!-- Accessories start here -->
-  <section class="accessories py-0">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 px-0">
-          <img src="assets/img/2X_1.webp" width="100%" alt="Product">
-        </div>
-        <div class="col-lg-6 col-md-6 px-0">
-          <img src="assets/img/2X_2.webp" width="100%" alt="Product">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Accessories end here -->
-
-  <!-- Gift By Category Start here -->
-  <section class="home_gift mobile_section_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="text-center heading1 mb-2">Gifts They'll Love</h1>
-          <p class="text-center sub_heading1 mb-4">Journey To Making Fashion Dreams Come True In Elements Jewellers</p>
-
-          <div class="row align-items-center">
-            <div class="col-md-4 item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/forher.png" width="100%" alt="">
+    <!-- footer -->
+    <footer class="footer-ays text-center py-5" id="contact">
+        <div class="container pt-4">
+            <div class="mx-auto" style="max-width:600px;">
+                <a href="#home" class="footer-logo py-1">
+                    YadavAditya
+                </a>
+                <p class="mt-4 text-white">Follow On</p>
+                <div class="social-icons-main mt-4 pb-3">
+                    <ul class="social-icons3">
+                        <!-- <li>
+                            <a href="#facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/aditya-yadav-5b6840196/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.instagram.com/yadav.aditya.7" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="home_card_detail">
-                  <h5>
-                  For Her
-                  </h5>
-                  <p>Its all about her.. isn't it?</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
             </div>
-
-            <div class="col-md-4 item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/forhim2.png" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    For Him
-                  </h5>
-                  <p>Don't forget him. back.</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            <div class="col-md-4 item px-3">
-              <div class="home_card">
-                <div class="home_card_img mb-3">
-                  <img src="assets/img/home/anniversary.jpg" width="100%" alt="">
-                </div>
-                <div class="home_card_detail">
-                  <h5>
-                    Anniversary Gifts
-                  </h5>
-                  <p>For that special day.</p>
-                </div>
-                <div class="home_card_border"></div>
-              </div>
-            </div>
-
-            
-          </div>
+            <!-- copyright -->
+            <p class="copy-right-w3 text-white mt-5 pt-4">© 2024 YadavAditya. All rights reserved | Design by
+                <a href="http://yadavaditya.com" target="_blank"> yadavaditya.</a>
+            </p>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Gift By Category end here -->
+    </footer>
+    <!-- //footer -->
 
-  <!-- home_elementor start here -->
-  <section class="home_elementor" style="margin-top:10px;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 text-center">
-          <img src="assets/img/icon/exchange.png" alt="Exchange">
-          <h1 class="text-center heading1 mb-2">EASY EXCHANGES & RETURNS</h1>
-          <p class="text-center sub_heading1 mb-0">Exchange and refund only within 3 days</p>
-        </div>
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
-        <div class="col-lg-3 text-center">
-          <img src="assets/img/icon/free-delivery.png" alt="Free">
-          <h1 class="text-center heading1 mb-2">FREE SHIPPING EVERY DAY</h1>
-          <p class="text-center sub_heading1 mb-0">Next Day until 9PM, 7 Days a Weeks*</p>
-        </div>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
 
-        <div class="col-lg-3 text-center">
-          <img src="assets/img/icon/feedback.png" alt="Feedback">
-          <h1 class="text-center heading1 mb-2">ONE YEAR WARRANTY</h1>
-          <p class="text-center sub_heading1 mb-0">If your jewellery has a defect, we will fix it.</p>
-        </div>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
 
-        <div class="col-lg-3 text-center">
-          <img src="assets/img/icon/warranty.png" alt="Warranty">
-          <h1 class="text-center heading1 mb-2">8.7/10 FEEDBACK RATING</h1>
-          <p class="text-center sub_heading1 mb-0">Most preferred store with high score</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
 
-  <!-- home_elementor end here -->
+    <!-- libhtbox -->
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <!-- libhtbox -->
 
-  <!-- Testimonial start here -->
-  <section class="testimonial mobile_section_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="text-center heading1 mb-2">TESTIMONIALS</h1>
-          <p class="text-center sub_heading1 mb-4">Heartfelt Words from Our Cherished Customers</p>
-          <div id="testimonial-slider" class="testimonial_outer">
-            <div class="testimonial_list">
-              <div class="cust_img">
-                <img src="assets/img/client/Sophia.jpg" alt="Sophia">
-              </div>
-              <h3>The elegance and craftsmanship of my new necklace exceeded all my expectations. It's even more stunning in person! I received so many compliments at the event. Thank you for making my special day unforgettable.</h3>
-              <h6>-- Sophia Martinez</h6>
-            </div>
-            <div class="testimonial_list">
-              <div class="cust_img">
-                <img src="assets/img/client/Liam.jpg" alt="Liam">
-              </div>
-              <h3>I was blown away by the quality and attention to detail in the ring I ordered. The customer service was exceptional, and the delivery was right on time. I couldn't be happier with my purchase!</h3>
-              <h6>-- Liam O'Connor</h6>
-            </div>
-            <div class="testimonial_list">
-              <div class="cust_img">
-                <img src="assets/img/client/Emma.jpg" alt="Emma">
-              </div>
-              <h3>From browsing to buying, the entire experience was fantastic. The bracelet I purchased is absolutely beautiful and exactly what I was looking for. I'll definitely be coming back for more!</h3>
-              <h6>-- Emma Wilson</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- testimonials owlcarousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-two').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for Testimonials-->
 
-  <!-- Testimonial end here -->
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
 
-  <!-- Footer start here -->
-  <section class="footer pb-0 mobile_section_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer_col">
-          <a href="#">
-            <img src="assets/img/logo.svg" alt="">
-          </a>
-          <p class="mt-3" style="line-height: 26px;">Welcome to myJewel. We specialize in exquisite, handcrafted jewelry designed to celebrate your special moments. Discover timeless elegance and exceptional quality in every piece.</p>
-        </div>
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer_col">
-          <h1 class="heading2">Get to Know Us</h1>
-          <ul class="ps-0">
-            <li>
-              <a>Careers for Djewno</a>
-            </li>
-            <li>
-              <a>About Djewno</a>
-            </li>
-            <li>
-              <a>Inverstor Relations</a>
-            </li>
-            <li>
-              <a>Customer reviews</a>
-            </li>
-            <li>
-              <a>Social Responsibility</a>
-            </li>
-            <li>
-              <a>Store Locations</a>
-            </li>
-          </ul>
-        </div>
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer_col">
-          <h1 class="heading2">Let Us Help You</h1>
-          <ul class="ps-0">
-            <li>
-              <a>Accessibility Statement</a>
-            </li>
-            <li>
-              <a>Your Orders</a>
-            </li>
-            <li>
-              <a>Returns & Replacements</a>
-            </li>
-            <li>
-              <a>Shipping Rates & Policies</a>
-            </li>
-            <li>
-              <a>Privacy Policy</a>
-            </li>
-            <li>
-              <a>Terms and Conditions</a>
-            </li>
-          </ul>
-        </div>
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer_col">
-          <h1 class="heading2">24X7 Enquiry Support ( ALL Days )</h1>
-          <ul class="ps-0">
-            <li>
-              <a class="enq_support">
-                <span>General : </span>
-                <span>myJeweldemo@gmail.Com</span>
-              </a>
-            </li>
-            <li>
-              <a class="enq_support">
-                <span>Corporate : </span>
-                <span>b2bmyJeweldemo@gmail.Com</span>
-              </a>
-            </li>
-            <li>
-              <a class="enq_support">
-                <span>Hr : </span>
-                <span>careermyJeweldemo@gmail.Com</span>
-              </a>
-            </li>
-            <li>
-              <a class="enq_support">
-                <span>Grievance : </span>
-                <span>Click Here</span>
-              </a>
-            </li>
-          </ul>
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
 
-          <div class="contact_ul">
-            <ul class="ps-0">
-              <li>
-                <a><i class="fa-solid fa-phone"></i></a>
-              </li>
-              <li>
-                <a><i class="fa-solid fa-comments"></i></a>
-              </li>
-              <li>
-                <a><i class="fa-brands fa-square-whatsapp"></i></a>
-              </li>
-              <li>
-                <a><i class="fa-solid fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-          
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <hr class="mb-1">
-          <div class="footer_bottom">
-            <div class="footer_copyrigh">
-              <p>© 2024 This is for learning</p>
-            </div>
-            <div class="footer_pt">
-              <ul>
-                <li>
-                  <i class="fa-brands fa-cc-visa"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-cc-mastercard"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-cc-paypal"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-apple-pay"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-google-pay"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-cc-discover"></i>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer end here -->
-
-    
-
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<!-- jQery -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<!-- popper js -->
-<script src="js/popper.min.js"></script>
-<!-- bootstrap js -->
-<script src="js/bootstrap.js"></script>
-<!-- custom js -->
-<script src="js/custom.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script>
-  $(document).ready(function() {
-    $('.menu_list li a').click(function() {
-      $('.menu_list li a').removeClass('active');
-      $(this).addClass('active');
-    });
-  });
-
-  // scroll to top
-  $(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 68) {
-            $('.navbar').addClass('fixed_top');
-        } else {
-            $('.navbar').removeClass('fixed_top');
-        }
-    });
-  });
-</script>
-
-<script>
-  $(function() {
-    // Owl Carousel
-    var owl = $(".owl-carousel");
-    owl.owlCarousel({
-      autoplay: true,
-      items: 4,
-      margin: 10,
-      loop: true,
-      nav: true,
-      /*
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      */
-      responsiveClass: true,
-      autoHeight: true,
-      autoplayTimeout: 3000,
-      smartSpeed: 800,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-
-        600: {
-          items: 3
-        },
-        
-        1024: {
-          items: 4
-        },
-
-        1366: {
-          items: 4
-        }
-      }
-    });
-  });
-</script>
-
-<script>
-  $(document).ready(function(){
-    $('#testimonial-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: true,
-      speed: 2000,
-      infinite: true,
-      autoplaySpeed: 2000,
-      autoplay: true,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
-    });
-  });
-</script>
 
 </html>
