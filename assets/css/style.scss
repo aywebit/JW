@@ -1088,6 +1088,10 @@ marquee{
   }
 }
 .product_details{
+  // min-height: calc( 100vh - 100px );
+  // max-height: calc( 100vh - 100px );
+  // overflow-y: auto;
+  // overflow-x: hidden;
   .product_title{
     font-size: 20px;
     color: #051937;
