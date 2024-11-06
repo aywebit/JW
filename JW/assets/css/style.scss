@@ -1529,6 +1529,12 @@ marquee{
       }
       .cart_product_card_middle{
         width: 70%;
+        .cart_product_card_middle_btn{
+          a{
+            display: table;
+            word-wrap: break-word;
+          }
+        }
         .amnt_disc{
           flex-wrap: wrap;
         }
