@@ -1299,9 +1299,20 @@ marquee{
     }
     .cart_product_card_left{
       width: 15%;
+      .quantity_form_select{
+        display: none;
+      }
     }
     .cart_product_card_middle{
       width: 55%;
+      .cancel_order_a{
+        color: #f03e3e;
+        transition: 0.3s ease-in-out;
+        &:hover{
+          color: #e10000;
+        }
+
+      }
       a{
         font-size: 16px;
         display: -webkit-box;
@@ -1362,7 +1373,6 @@ marquee{
   background-color: #FFFFFF;
   box-shadow: 0px -2px 10px -5px #212529;
   position: sticky;
-  z-index: 11111;
 }
 .cart_section_right_box{
   width: 100%;
@@ -1467,6 +1477,156 @@ marquee{
 }
 
 
+// track order start herre ---------------------------------------------------
+.order_card{
+  background: #FFFFFF;
+  border: 1px solid #05193730;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #05193720;
+  padding: 16px;
+}
+
+.wizard{
+  padding-top: 35px;
+  li {
+    
+  }
+  li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: red;
+    transition: 0.1s ease-in-out;
+  }
+    
+  .nav-tabs > li a {
+    width: 30px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    .procces_date{
+      position: absolute;
+      bottom: -55px;
+      font-style: normal;
+      font-weight: 400;
+      white-space: nowrap;
+      left: 50%;
+      transform: translateX(-30%);
+      font-size: 12px;
+      font-weight: 500;
+      color: #B6BDC5;
+    }
+  }
+      
+  .nav-tabs > li a i{
+    position: absolute;
+    top: -25px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-30%);
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+  }
+  .nav-tabs > li a:hover {
+    background: transparent;
+  }
+  .tab-pane {
+    position: relative;
+    padding-top: 20px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  .nav-tabs {
+    position: relative;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li.active span.round-tab {
+    background: #0db02b;
+    color: #fff;
+    border-color: #0db02b;
+    &::before{
+      content: "\f00c";
+      font-family: fontawesome;
+    }
+  }
+  li.active span.round-tab i{
+    color: #5bc0de;
+  }
+  .nav-tabs > li.active > a i{
+    color: #0db02b;
+  }
+}
+
+.wizard > div.wizard-inner {
+  position: relative;
+}
+
+.connecting-line {
+  height: 2px;
+  background: #e0e0e0;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 13px;
+  transform: translate(0%, 50%);
+  z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  border: 0;
+  border-bottom-color: transparent;
+}
+
+span.round-tab {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #0e214b;
+  font-weight: 500;
+  border: 1px solid #ddd;
+}
+span.round-tab i{
+  color:#555555;
+}
+
+.order_process_disc{
+  position: absolute;
+  width: max-content;
+  top: 100px;
+  box-shadow: 0px 0px 5px #B6BDC5;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+
 /* Large devices (laptops/desktops, 992px and up) --------------------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
   .navbar{
@@ -1525,6 +1685,9 @@ marquee{
         width: 30%;
         .quantity{
           display: none;
+        }
+        .quantity_form_select{
+          display: block;
         }
       }
       .cart_product_card_middle{
