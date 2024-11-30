@@ -19695,9 +19695,10 @@ ul.single-info li p {
 .recent_p_card_img{
   width: 100%;
   min-height: 200px;
+  height: 200px;
   max-height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
+  /* overflow-y: auto; */
 }
 .recent_project_row_owl_carousel .owl-height{
  height: auto !important;
@@ -19713,9 +19714,29 @@ ul.single-info li p {
   margin-left: 8px;
 }
 
+@media only screen and (max-width: 600px) {
+  .recent_p_card_img{
+    min-height: 150px;
+    height: 150px;
+    max-height: 150px;
+  }
+  .recent_p_card_btn{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .recent_p_card_btn span{
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .ay-gallery span.hover-content {
     padding: 36px 40px;
+  }
+  .recent_p_card_img{
+    min-height: 150px;
+    height: 150px;
+    max-height: 150px;
   }
   .recent_p_card_btn{
     padding-left: 16px !important;
