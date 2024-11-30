@@ -1,0 +1,224 @@
+@media(max-width: 768px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.expe-de a{
+		float: none;
+	}
+
+	.expe-de{
+		text-align: center;
+	}
+
+	.menu ul li:last-child a{
+		padding: 0 35px !important;
+	}
+
+	.banner-content-left{
+		padding-top: 30%;
+	}
+
+	.banner-content-right{
+		padding-top: 0%;
+	}
+
+	.banner-content-left a{
+		font-size: 10px;
+		border: 1px dashed #3d2514;
+	}
+
+	.banner-content-left h1{
+		font-size: 53px;
+	}
+
+	.banner-content-left h2{
+		font-size: 26px;
+	}
+
+	.banner-content .col-md-6{
+		width: 100%;
+	}
+
+	.burger .offset-4{
+		margin-left: 0;
+		padding-left: 150px !important;
+		padding-right: 150px !important;
+	}
+
+	.burger .offset-1{
+		margin-left: 0;
+	}
+
+	.burger-type .col-md-4{
+		width: 70%;
+		margin: 2% 15%;
+	}
+
+	.form .offset-2{
+		margin-left: 0;
+	}
+
+	.bottle{
+		margin: 200px 0 0 -40px;
+	}
+
+	.book2{
+		margin: 300px 0 0 500px;
+	}
+}
+
+@media(max-width: 480px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.menu ul li:last-child a{
+		padding: 0 35px !important;
+	}
+
+	.banner-content-left{
+		padding-top: 30%;
+	}
+
+	.banner-content-right{
+		padding-top: 0%;
+	}
+
+	.banner-content-left a{
+		font-size: 10px;
+		border: 1px dashed #3d2514;
+	}
+
+	.banner-content-left h1{
+		font-size: 53px;
+	}
+
+	.banner-content-left h2{
+		font-size: 26px;
+	}
+
+	.banner-content .col-md-6{
+		width: 100%;
+	}
+
+	.burger .offset-4{
+		margin-left: 0;
+		padding-left: 150px !important;
+		padding-right: 150px !important;
+	}
+
+	.burger .offset-1{
+		margin-left: 0;
+	}
+
+	.burger-type .col-md-4{
+		width: 70%;
+		margin: 2% 15%;
+	}
+
+	.form .offset-2{
+		margin-left: 0;
+	}
+
+	.book1{
+		margin: -5% 0 0 -40%;
+	}
+
+	.bottle{
+		margin: 100% 0 0 -18%;
+	}
+
+	.book2{
+		margin: 100% 0 0 50%;
+	}
+}
+
+@media(max-width: 320px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.expe-de a{
+		font-size: 14px;
+	}
+
+	.navbar-brand{
+		width: 50%;
+	}
+
+	.navbar-brand img{
+		width: 100%;
+	}
+
+	.menu ul li:last-child a{
+		padding: 0 35px !important;
+	}
+
+	.banner-content-left{
+		padding-top: 75%;
+	}
+
+	.banner-content-right{
+		padding-top: 0%;
+	}
+
+	.banner-content-left a{
+		font-size: 10px;
+		border: 1px dashed #3d2514;
+	}
+
+	.banner-content-left h1{
+		font-size: 53px;
+	}
+
+	.banner-content-left h2{
+		font-size: 26px;
+	}
+
+	.banner-content .col-md-6{
+		width: 100%;
+	}
+
+	.burger-button p{
+		font-size: 14px;
+	}
+
+	.burger h1{
+		font-size: 25px;
+	}
+
+	.burger .offset-4{
+		margin-left: 0;
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+	}
+
+	.burger .offset-1{
+		margin-left: 0;
+	}
+
+	.burger-type .col-md-4{
+		width: 70%;
+		margin: 2% 15%;
+	}
+
+	.form .offset-2{
+		margin-left: 0;
+	}
+
+	.book1{
+		margin: -5% 0 0 -55%;
+	}
+
+	.bottle{
+		margin: 150% 0 0 -30%;
+	}
+
+	.book2{
+		margin: 150% 0 0 50%;
+	}
+}

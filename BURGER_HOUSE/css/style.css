@@ -1,0 +1,559 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.banner-img{
+	width: 100%;
+	height: 745px;
+	float: left;
+	background: url(../images/banner.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banner-content{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: absolute;
+}
+
+.banner-content-left{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-top: 50%;
+}
+
+.banner-content-left a{
+	font-size: 20px;
+	font-family: Bebas Neue;
+	color: #3d2514 !important;
+	letter-spacing: 2px;
+	border: 2px dashed #3d2514;
+	padding: 5px 15px;
+}
+
+.banner-content-left h1{
+	font-size: 106px;
+	font-family: Alfa Slab One Regular;
+	color: #3d2514;
+	padding-top: 30px;
+	text-transform: uppercase;
+	margin-bottom: 0px !important;
+	line-height: 1.0 !important;
+	text-shadow: 4px 4px 0 #fee7ba;
+}
+
+.banner-content-left h2{
+	font-size: 52px;
+	font-family: Alfa Slab One Regular;
+	color: #3d2514;
+	text-transform: uppercase;
+	line-height: 1.0 !important;
+	text-shadow: 4px 4px 0 #fee7ba;
+}
+
+.banner-content-right{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 40% 0 0 5%;
+	position: relative;
+}
+
+.circle{
+	width: 157px;
+	height: 157px;
+	float: left;
+	background: #bf2222;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -5%;
+	cursor: pointer;
+}
+
+.circle-border{
+	width: 136px;
+	height: 136px;
+	float: left;
+	border: 2px dashed #fff;
+	border-radius: 50%;
+	transition: 0.5s ease-in;
+}
+
+
+.circle-border h1{
+	font-size: 28px;
+	font-family: Bebas Neue;
+	color: #fff;
+	line-height: 0.2;
+	padding-top: 35%;
+
+}
+
+.circle-border h1 span{
+	font-size: 64px;
+	font-family: Bebas Neue;
+	color: #fff;
+
+}
+
+.circle-border p{
+	font-size: 31px;
+	font-family: Bebas Neue;
+	color: #fff;
+	letter-spacing: 10px;
+	padding-left: 5%;
+}
+
+.circle:hover h1{
+	transform: scale(1.3);
+	transition: 0.3s ease-in-out;
+	margin-bottom: 15%;
+}
+
+.circle:hover h1 span{
+	transform: scale(1.3);
+	transition: 0.3s ease-in-out;
+}
+
+
+.expe-de{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-top: 15px;
+}
+
+.expe-de a{
+	font-size: 18px;
+	font-family: Bebas Neue;
+	color: #3d2514 !important;
+	letter-spacing: 2px;
+	transition: 0.3s ease-in-out;
+	float: right;
+}
+
+.expe-de a:hover{
+	color: #fff !important;
+}
+
+.header.sticky{
+    background: #fbb034;
+}
+
+
+.navbar{
+	padding-top: 0px !important;
+}
+
+.menu ul li{
+/*	padding: 50px 0 0 0;*/
+}
+
+.menu ul li a{
+	font-size: 20px;
+	font-family: Bebas Neue;
+	color: #3d2514 !important;
+	padding: 0 35px !important;
+	letter-spacing: 2px;
+	transition: 0.3s ease-in-out;
+	float: right;
+}
+
+.menu ul li:last-child a{
+	padding: 0 0 0 35px !important;
+}
+
+.menu ul li a:hover{
+	color: #fff !important;
+}
+
+.burger{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 50px;
+}
+
+.burger-button .col-md-4{
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+}
+
+.burger-button p{
+
+	text-align: center;
+	font-size: 24px;
+	font-family: Bebas Neue;
+	color: #3d2514 !important;
+	letter-spacing: 2px;
+	padding: 5px 5px;
+	background: #ffc045;
+}
+
+.burger-heading h1{
+
+	text-align: center;
+	font-size: 46px;
+	font-family: Alfa Slab One Regular;
+	color: #3d2514 !important;
+	text-transform: uppercase;
+}
+
+.burger-heading p{
+
+	text-align: center;
+	font-size: 15px;
+	font-family: Montserrat Regular;
+	color: #3d2514 !important;
+}
+
+.burger-type{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.burger-type img{
+	margin-top: 46px;
+}
+
+.burger-type .middle img{
+	margin-top: 10px;
+}
+
+.burger-type h1{
+	font-size: 34px;
+	font-family: Bebas Neue;
+	color: #3d2514 !important;
+	padding-top: 20px;
+}
+
+.burger-type p{
+	font-size: 15px;
+	font-family: Montserrat Regular;
+	color: #3d2514 !important;
+	padding: 5px 0 20px 0;
+}
+
+.burger-type a{
+	font-size: 15px;
+	font-family: Alfa Slab One;
+	color: #bf2222;
+	border: 2px solid #bf2222;
+	padding: 10px 20px;
+	transition: 0.3s ease-in-out;
+}
+
+.burger-type .col-md-4:hover a{
+	color: #fff;
+	background: #bf2222;
+}
+
+.burger-border{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-bottom: 10%;
+}
+
+.burger-border:before{
+    content: '';
+    width: 0%;
+    height: 0%;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.burger-border:hover:before{
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid #f95719;
+    border-top: 2px solid #f95719;
+}
+
+.burger-border:after{
+    content: '';
+    width: 0%;
+    height: 0%;
+    float: left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.burger-border:hover:after{
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid #f95719;
+    border-bottom: 2px solid #f95719;
+}
+
+.book{
+	width: 100%;
+	height: 700px;
+	float: left;
+	margin-top: 50px;
+	position: relative;
+	overflow: hidden;
+}
+
+.book1{
+	width: 368px;
+	height: 358px;
+	float: left;
+	background: url(../images/book1.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;	
+	position: absolute;
+	margin: 0px 0 0 -8%;
+}
+
+.book1 img{
+	
+}
+
+.book2{
+	width: 533px;
+	height: 536px;
+	float: left;
+	background: url(../images/book2.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;	
+	position: absolute;
+	margin: 18% 0 0 80%;
+}
+
+.book2 img{
+	
+}
+
+.bottle{
+	width: 240px;
+	height: 415px;
+	float: left;
+	background: url(../images/bottle.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;	
+	position: absolute;
+	margin: 18% 0 0 5%;
+}
+
+.bottle img{
+	
+}
+
+.book-heading h1{
+	font-size: 27px;
+	font-family: Bebas Neue;
+	color: #3d2514;
+}
+
+.book-heading h2{
+	font-size: 46px;
+	font-family: Alfa Slab One;
+	color: #3d2514;
+
+}
+
+.form{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-top: 100px;
+	text-align: center;
+	position: absolute;
+}
+
+form{
+	margin-top: 80px;
+}
+
+.form input[type="text"]{
+	width: 48%;
+	height: 50px;
+	float: left;
+	background: none;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: Bebas Neue;
+	border: 2px solid #0002;
+	border-radius: 5px;
+	
+}
+
+.form input[type="email"]{
+	width: 48%;
+	height: 50px;
+	float: right;
+	background: none;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: Bebas Neue;
+	border: 2px solid #0002;
+	border-radius: 5px;
+}
+
+.form input[type="date"]{
+	width: 48%;
+	height: 50px;
+	float: left;
+	background: none;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: Bebas Neue;
+	border: 2px solid #0002;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+.form .calendar[type="text"]{
+	width: 48%;
+	height: 50px;
+	float: left;
+	background: none;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: Bebas Neue;
+	border: 2px solid #0002;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+.form input[type="time"]{
+	width: 48%;
+	height: 50px;
+	float: right;
+	background: none;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: Bebas Neue;
+	border: 2px solid #0002;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+.form input[type="number"]{
+	width: 48%;
+	height: 50px;
+	float: left;
+	background: none;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: Bebas Neue;
+	border: 2px solid #0002;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+.form input[type="submit"]{
+	width: 48%;
+	height: 50px;
+	float: right;
+	background: none;
+	font-size: 20px;
+	font-family: Alfa Slab One;
+	color: #bf2222;
+	border: 2px solid #bf2222 !important;
+	border-radius: 5px;
+	margin-top: 25px;
+	transition: 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover{
+	background: #bf2222;
+	color: #fff;
+}
+
+.form input:hover{
+	border: 2px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

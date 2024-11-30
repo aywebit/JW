@@ -1,0 +1,29 @@
+Assignment - Jr. Frontend Developer - Aditya
+Inbox
+
+Vicky Pal <vicky.pal@planfirma.in>
+3:22 PM (2 hours ago)
+to me, Sapna, Dhwani
+
+Hi, I'm Vicky pal from Planfirma Technologies Pvt Ltd, 
+
+Please share your portfolio and complete the assignment before 16/12/2021 at 6 PM IST.
+
+
+PSD:- https://drive.google.com/file/d/1yoaPhAHDalL2ZPD7rZF9hUi26pbcVwfM/view?usp=sharing
+
+
+Assignment Note:
+1) Create Html for the attached PSD.
+2) Is should be mobile responsive 
+3) Code should be optimized
+4) Use bootstrap 3/4/5
+5) Use simple form validation to find a table 
+6) Image should be optimized and have the same resolution.
+
+
+Thanks & Regards,
+Vicky pal
+UI Developer
+9768730708
+
