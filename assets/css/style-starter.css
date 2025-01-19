@@ -21073,3 +21073,18 @@ ul.social-icons-contact li a {
 }
 
 /* //contact */
+
+
+.more_website_btn a{
+  font-size: 18px;
+  width: 100%;
+  padding: 24px 24px;
+  display: block;
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+  border-radius: 8px;
+}
+.more_website_btn a:hover{
+  color: #FFFFFF;
+  background-color: #0d6efd;
+}
