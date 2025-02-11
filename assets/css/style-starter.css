@@ -19703,7 +19703,20 @@ ul.single-info li p {
 .recent_project_row_owl_carousel .owl-height{
  height: auto !important;
 }
-
+.recent_project_row_owl_carousel{
+  position: relative;
+  margin-top: 50px;
+}
+.recent_project_row_owl_carousel .owl-nav{
+  position: absolute;
+  top: -100px;
+}
+.recent_project_row_owl_carousel .owl-nav button{
+  background: #D6D6D6 !important;
+}
+.recent_project_row_owl_carousel .owl-nav button:hover{
+  background: #0d6efd !important;
+}
 .recent_p_card_btn{
   width: max-content;
   display: flex;
@@ -21088,3 +21101,4 @@ ul.social-icons-contact li a {
   color: #FFFFFF;
   background-color: #0d6efd;
 }
+
