@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jharkhand Building & Other Construction Workers Welfare Board</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom font for heading text on hero */
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    .font-pacifico {
+      font-family: 'Pacifico', cursive;
+    }
+
+    /* Custom scrollbar for horizontal carousel */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* marquee animation for announcements */
+    @keyframes marquee {
+      0% {transform: translateX(100%);}
+      100% {transform: translateX(-100%);}
+    }
+    .marquee {
+      white-space: nowrap;
+      display: inline-block;
+      animation: marquee 15s linear infinite;
+    }
+    /* Dropdown caret rotate */
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- HEADER TOP BAR -->
+  <header class="bg-green-900 text-gray-200 text-xs px-4 py-1 flex items-center justify-between select-none">
+    <div class="flex items-center space-x-4 text-[10px] md:text-xs">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/647857dd-c35d-4c2e-9c8d-c71f3f7318a8.png" alt="Logo of Jharkhand Government in round green and white emblem" class="w-8 h-8 rounded-full border border-gray-300" />
+      <div>
+        <div class="font-semibold text-sm md:text-base">Jharkhand Building & Other Construction Workers Welfare Board</div>
+        <div class="text-green-200 text-[9px] md:text-xs">
+          Department of Labour, Employment, Training and Skill Development, Government of Jharkhand
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-3 text-xs md:text-sm">
+      <button aria-label="Switch to Hindi language" class="bg-green-700 hover:bg-green-600 px-2 py-1 rounded text-white">हिंदी</button>
+      <button aria-label="Switch to English language" class="bg-white text-green-900 border border-green-800 hover:bg-green-100 px-2 py-1 rounded font-medium">English</button>
+      <div class="relative group">
+        <button aria-haspopup="true" aria-expanded="false" aria-label="Login dropdown" class="bg-green-700 hover:bg-green-600 px-3 py-1 rounded inline-flex items-center gap-2">
+          <i class="fas fa-user-circle"></i> Login <i class="fas fa-caret-down"></i>
+        </button>
+        <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded mt-1 py-2 right-0 w-48 text-green-900 z-20">
+          <li><a href="#" class="block px-4 py-1 hover:bg-green-100">Worker Login</a></li>
+          <li><a href="#" class="block px-4 py-1 hover:bg-green-100">Administrator Login</a></li>
+          <li><a href="#" class="block px-4 py-1 hover:bg-green-100">Help & Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="bg-green-700 text-white text-sm md:text-base shadow sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4">
+      <ul class="flex flex-wrap items-center gap-1 md:gap-4 py-2 font-semibold">
+        <li><a href="#" class="hover:bg-green-900 px-3 py-1 rounded inline-block">Home</a></li>
+        <li class="relative group">
+          <button aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 hover:bg-green-900 px-3 py-1 rounded w-full md:w-auto">
+            About Us <i class="fas fa-caret-down"></i>
+          </button>
+          <ul class="absolute hidden group-hover:block top-full left-0 bg-green-800 shadow-lg py-2 rounded min-w-[200px] z-20">
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Board Overview</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Key Officials</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Contact Information</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 hover:bg-green-900 px-3 py-1 rounded w-full md:w-auto">
+            Scheme <i class="fas fa-caret-down"></i>
+          </button>
+          <ul class="absolute hidden group-hover:block top-full left-0 bg-green-800 shadow-lg py-2 rounded min-w-[200px] z-20">
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Maternity Benefit Scheme</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Anath Pension Scheme</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Marriage Assistance</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Medical Coverage Scheme</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:bg-green-900 px-3 py-1 rounded">Cess</a></li>
+        <li><a href="#" class="hover:bg-green-900 px-3 py-1 rounded">FAQ</a></li>
+        <li><a href="#" class="hover:bg-green-900 px-3 py-1 rounded">MIS</a></li>
+        <li class="relative group">
+          <button aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 hover:bg-green-900 px-3 py-1 rounded w-full md:w-auto">
+            Contact Us <i class="fas fa-caret-down"></i>
+          </button>
+          <ul class="absolute hidden group-hover:block top-full left-0 bg-green-800 shadow-lg py-2 rounded min-w-[200px] z-20">
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Office Address</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Helpdesk</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Feedback</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 hover:bg-green-900 px-3 py-1 rounded w-full md:w-auto">
+            What's New <i class="fas fa-caret-down"></i>
+          </button>
+          <ul class="absolute hidden group-hover:block top-full left-0 bg-green-800 shadow-lg py-2 rounded min-w-[220px] z-20">
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Announcements</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Tenders</a></li>
+            <li><a href="#" class="block px-4 py-1 hover:bg-green-700">Updates</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SLIDER -->
+  <section class="relative max-w-7xl mx-auto mt-6 overflow-hidden rounded-lg shadow-lg">
+    <div class="relative h-64 md:h-96 w-full overflow-hidden rounded-lg">
+      <!-- Slides -->
+      <div class="carousel-slider flex transition-transform duration-700 ease-in-out" style="transform: translateX(0%)">
+        <div class="relative flex-shrink-0 w-full h-64 md:h-96">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f41bebf1-719b-4466-ae05-cbbd2daa4134.png" alt="Ethnic construction workers wearing hard hats working on site with steel rods and concrete, sunny day" class="object-cover w-full h-full brightness-90" />
+          <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-12 text-white drop-shadow-lg">
+            <h2 class="font-pacifico text-2xl md:text-4xl font-bold max-w-lg mb-3 leading-tight">Labour is not just effort,</h2>
+            <h3 class="font-pacifico text-xl md:text-3xl max-w-lg">It is the foundation of progress and pride.</h3>
+          </div>
+        </div>
+        <div class="relative flex-shrink-0 w-full h-64 md:h-96">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3b257d7-b2d5-4495-b17d-30cdfd810d3c.png" alt="Construction site workers with helmets erecting steel framework pouring concrete on sunny bright day" class="object-cover w-full h-full brightness-90" />
+          <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-12 text-white drop-shadow-lg">
+            <h2 class="font-pacifico text-2xl md:text-4xl font-bold max-w-lg mb-3 leading-tight">Building Strong Foundations</h2>
+            <h3 class="font-pacifico text-xl md:text-3xl max-w-lg">For Jharkhand's Growth and Prosperity</h3>
+          </div>
+        </div>
+        <div class="relative flex-shrink-0 w-full h-64 md:h-96">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1fa59fdd-26fa-4880-86dd-2c2e1b4c6d89.png" alt="Close-up view of construction workers holding building blueprints and plans on site with cranes and scaffolds" class="object-cover w-full h-full brightness-90" />
+          <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-12 text-white drop-shadow-lg">
+            <h2 class="font-pacifico text-2xl md:text-4xl font-bold max-w-lg mb-3 leading-tight">Empowering Labour, Empowering Jharkhand</h2>
+            <h3 class="font-pacifico text-xl md:text-3xl max-w-lg">Committed to Worker Welfare and Rights</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button aria-label="Previous slide" class="absolute left-4 top-1/2 -translate-y-1/2 bg-green-800 bg-opacity-75 hover:bg-opacity-90 text-white rounded-full p-2 shadow-md z-20" id="prevSlide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button aria-label="Next slide" class="absolute right-4 top-1/2 -translate-y-1/2 bg-green-800 bg-opacity-75 hover:bg-opacity-90 text-white rounded-full p-2 shadow-md z-20" id="nextSlide">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Dots -->
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+        <button aria-label="Slide 1" class="w-3 h-3 rounded-full bg-green-600" data-slide="0"></button>
+        <button aria-label="Slide 2" class="w-3 h-3 rounded-full bg-green-400" data-slide="1"></button>
+        <button aria-label="Slide 3" class="w-3 h-3 rounded-full bg-green-400" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENTS MARQUEE -->
+  <section aria-label="Announcements" class="bg-green-700 text-white px-4 py-2 mt-4 flex items-center gap-3 overflow-hidden">
+    <i class="fas fa-bullhorn text-lg flex-shrink-0"></i>
+    <div class="overflow-hidden whitespace-nowrap flex-1">
+      <div class="marquee">
+        <span class="px-3 font-semibold text-yellow-300">NEW</span> Application Deadline Extended for Maternity Benefit Scheme  |  
+        Online Renewal of Labour Registration Now Available  |  
+        Distribution of Work Safety Equipment Ongoing  |  
+        Upcoming Skill Development Workshops Announced  |  
+        Check Latest COVID-19 Safety Protocols for Construction Sites
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERS SECTION -->
+  <section class="max-w-7xl mx-auto my-8 px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-lg shadow flex items-center p-3 space-x-4 border-l-8 border-green-600">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a256a80e-d85a-461f-b822-32f4db1b81b8.png" alt="Portrait photo of Shri Hemant Soren, Chief Minister of Jharkhand wearing glasses and traditional attire with smiling expression" class="w-24 h-24 rounded-full object-cover border border-green-300" />
+      <div>
+        <h3 class="text-green-900 font-semibold">Shri Hemant Soren</h3>
+        <p class="text-sm text-gray-600">Hon'ble Chief Minister, Government of Jharkhand</p>
+      </div>
+    </div>
+    <div class="bg-white rounded-lg shadow flex items-center p-3 space-x-4 border-l-8 border-green-600">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/245d73f8-e3fe-45ff-baa3-9742c1cd3154.png" alt="Portrait photo of Shri Sanjay Prasad Yadav, Labour Minister of Jharkhand smiling wearing formal shirt and jacket" class="w-24 h-24 rounded-full object-cover border border-green-300" />
+      <div>
+        <h3 class="text-green-900 font-semibold">Shri Sanjay Prasad Yadav</h3>
+        <p class="text-sm text-gray-600">Hon'ble Labour Minister, Government of Jharkhand</p>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:space-x-4 items-center md:items-stretch space-y-2 md:space-y-0">
+      <button class="flex-1 bg-green-700 hover:bg-green-800 text-white py-3 rounded shadow flex items-center justify-center gap-3 font-semibold">
+        <i class="fas fa-user-plus text-xl"></i> Labour Registration
+      </button>
+      <button class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded shadow flex items-center justify-center gap-3 font-semibold">
+        <i class="fas fa-sync-alt text-xl"></i> Labour Membership Renewal
+      </button>
+      <button class="flex-1 bg-teal-400 hover:bg-teal-500 text-white py-3 rounded shadow flex items-center justify-center gap-3 font-semibold">
+        <i class="fas fa-credit-card text-xl"></i> Cess Payment
+      </button>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="max-w-7xl mx-auto px-4 my-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative">
+    <div class="md:col-span-2 bg-white rounded-lg shadow p-8 border border-green-200">
+      <h2 class="text-green-800 text-lg font-semibold mb-2">About</h2>
+      <h3 class="text-green-900 text-2xl md:text-3xl font-bold mb-4">Building and Other Construction Workers Welfare Board</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Construction of government and non-government buildings and other construction works such as bridges, roads, airstrips, irrigation, drainage, embankments, tunnels, flood control, power generation,
+        transmission and distribution, water taps, oil and gas installations, dams. Construction work related to canal, reservoir, pipeline, tower, television, telephone-mobile tower, etc. Repairs,
+        maintenance, etc. Workers (laborers, masons, plumbers, electricians, etc.) are building and other construction workers.
+      </p>
+      <button class="mt-4 text-green-900 border border-green-900 rounded px-3 py-1 hover:bg-green-100 font-semibold">Read More</button>
+      <div class="hidden md:block absolute -left-8 top-8 w-28 h-full border-l-4 border-green-100 rounded-l-lg pointer-events-none" aria-hidden="true"></div>
+    </div>
+    <div class="rounded-lg overflow-hidden shadow-lg relative">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76169292-b0a5-4200-b3ed-1c2814903869.png" alt="Modern construction site with cranes and skyscrapers under building in early morning sunlight with hazy sky" class="object-cover w-full h-full" 
+           onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b6ca5b96-1575-4829-b73f-15affd0e445c.png';" />
+    </div>
+  </section>
+
+  <!-- VISION & MISSION SECTION -->
+  <section class="bg-green-50 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <article class="bg-white rounded-lg shadow p-6 border border-green-200 flex flex-col md:flex-row items-center gap-4" aria-labelledby="visionHeading">
+        <div class="text-green-700 text-3xl md:text-4xl flex flex-col items-center justify-center rounded-full w-20 h-20 border-4 border-green-300">
+          <i class="fas fa-eye"></i>
+        </div>
+        <div>
+          <h3 id="visionHeading" class="font-semibold text-green-900 text-lg mb-2">Our Vision</h3>
+          <p class="text-gray-700 text-sm md:text-base">
+            To ensure the holistic welfare and social security of construction and building workers across Jharkhand by providing timely support, safety, and growth opportunities,
+            enabling them to live with dignity and pride.
+          </p>
+        </div>
+      </article>
+      <article class="bg-white rounded-lg shadow p-6 border border-green-200 flex flex-col md:flex-row items-center gap-4" aria-labelledby="missionHeading">
+        <div class="text-green-700 text-3xl md:text-4xl flex flex-col items-center justify-center rounded-full w-20 h-20 border-4 border-green-300">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <div>
+          <h3 id="missionHeading" class="font-semibold text-green-900 text-lg mb-2">Our Mission</h3>
+          <ul class="text-gray-700 list-disc list-inside text-sm md:text-base space-y-1">
+            <li>To implement effective welfare schemes and benefits for registered workers.</li>
+            <li>To ensure safety, skill development, and healthcare for construction workers.</li>
+            <li>To maintain transparency and efficiency in services through digital platforms.</li>
+            <li>To promote awareness about rights, entitlements, and social upliftment.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- LABOUR WELFARE SCHEMES -->
+  <section class="max-w-7xl mx-auto px-4 my-16">
+    <h2 class="text-green-900 font-semibold text-2xl mb-3">Labour Welfare Schemes</h2>
+    <p class="text-gray-700 mb-6">Click on a scheme below to view detailed information.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-4">
+        <article class="flex items-center gap-3 rounded bg-white shadow p-4 border border-green-200 cursor-pointer hover:shadow-lg transition-shadow">
+          <i class="fas fa-heart text-pink-500 text-2xl flex-shrink-0"></i>
+          <div>
+            <h3 class="font-semibold text-green-800">Maternity Benefit Scheme</h3>
+            <p class="text-gray-600 text-sm">
+              Lorem Ipsum is simply dummy text of the printing and typ... <a href="#" class="text-green-700 underline">Read more</a>
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center gap-3 rounded bg-white shadow p-4 border border-green-200 cursor-pointer hover:shadow-lg transition-shadow">
+          <i class="fas fa-wallet text-yellow-500 text-2xl flex-shrink-0"></i>
+          <div>
+            <h3 class="font-semibold text-green-800">Anath Pension Scheme</h3>
+            <p class="text-gray-600 text-sm">
+              Lorem Ipsum is simply dummy text of the printing and typ... <a href="#" class="text-green-700 underline">Read more</a>
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center gap-3 rounded bg-white shadow p-4 border border-green-200 cursor-pointer hover:shadow-lg transition-shadow">
+          <i class="fas fa-gift text-red-500 text-2xl flex-shrink-0"></i>
+          <div>
+            <h3 class="font-semibold text-green-800">Marriage Assistance</h3>
+            <p class="text-gray-600 text-sm">
+              Lorem Ipsum is simply dummy text of the printing and typ... <a href="#" class="text-green-700 underline">Read more</a>
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center gap-3 rounded bg-white shadow p-4 border border-green-200 cursor-pointer hover:shadow-lg transition-shadow">
+          <i class="fas fa-ambulance text-blue-600 text-2xl flex-shrink-0"></i>
+          <div>
+            <h3 class="font-semibold text-green-800">Medical Coverage Scheme</h3>
+            <p class="text-gray-600 text-sm">
+              Lorem Ipsum is simply dummy text of the printing and typ... <a href="#" class="text-green-700 underline">Read more</a>
+            </p>
+          </div>
+        </article>
+        <button class="mt-4 border border-green-700 rounded px-4 py-2 text-green-700 font-semibold hover:bg-green-100 transition">Click Here To See All Scheme</button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c6e68e0-5fa4-489e-8cf5-dc292156620f.png" alt="Illustration of a family with heart icon symbolizing social welfare schemes, colorful and friendly style" class="w-full h-auto object-cover" />
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/97d145ec-70b0-4df9-9bec-a5fb32abb16e.png" alt="Portrait of senior Indian couple smiling warmly at home, traditional dress and indoor setting" class="w-full h-auto object-cover" />
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e60a7b45-93b7-403a-bbc7-69a9c3397e91.png" alt="Layout of construction safety gear including helmets, gloves, boots, and vests arranged neatly" class="w-full h-auto object-cover" />
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9cc93bf0-00ee-47ed-bdf1-85a1b0869b3d.png" alt="Group of young Indian construction workers smiling and riding a bicycle on a dusty rural road" class="w-full h-auto object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANT NOTIFICATIONS -->
+  <section class="bg-gradient-to-tr from-green-100 to-green-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Left Circular Cluster + Map -->
+      <div class="relative">
+        <div aria-hidden="true" class="flex flex-wrap justify-center items-center gap-2">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/828ce405-1fb6-4b15-9d67-e4103f96c6fd.png" alt="Aerial view of curvy road winding through forested green hills" class="rounded shadow" />
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/30319a90-f083-43d6-b20e-775c4e0ce518.png" alt="Straight forest road disappearing into horizon framed by tall pine trees" class="rounded shadow" />
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a26de8c-f195-4033-88db-71660923d5a5.png" alt="Group of Indian women in colorful traditional sarees and patterns smiling and dancing" class="rounded shadow" />
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0f424f6b-38d6-4260-81b1-23514b891ce0.png" alt="Stack of tender documents with big dice emphasizing chance and opportunity" class="rounded shadow" />
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d5e67d1d-62e2-4c1b-88c9-b3ec0adbcf4e.png" alt="Cultural mask and headgear worn during regional Jharkhand dances" class="rounded shadow" />
+          <div class="absolute -left-12 top-20 w-40 h-40 rounded-[50%_50%_50%_50%/30%_30%_70%_70%] bg-green-200 opacity-60 blur-xl pointer-events-none"></div>
+          <div class="absolute left-8 top-32 w-20 h-20 rounded-full border-8 border-green-400 opacity-30"></div>
+          <div class="absolute left-20 top-52 w-28 h-28 rounded-full border-4 border-green-300 opacity-20"></div>
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae63a6c8-ffe8-43e8-9fb5-e057de4378f1.png" alt="Silhouette map of Jharkhand state in red against a white background, centered" class="absolute top-20 left-10" style="width:112px;height:128px;" />
+        </div>
+      </div>
+
+      <!-- Right Notifications Card -->
+      <div class="bg-white border border-green-300 shadow-lg rounded-lg overflow-hidden max-w-lg mx-auto">
+        <div class="bg-green-700 text-white font-semibold p-3">Notices / Notification</div>
+        <div class="relative overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6a07edf5-74da-4712-92a9-54c1699e2ab9.png" alt="Group of officials displaying an announcement banner for Paternity Benefits Scheme with people applauding in background" class="w-full object-cover object-center" />
+          <div class="absolute bottom-3 right-3 bg-orange-600 text-white text-xs px-3 py-1 rounded cursor-pointer">APPLY NOW >></div>
+        </div>
+        <ul class="p-4 text-green-900 text-sm list-disc list-inside space-y-1">
+          <li>Result 2025 - Jharkhand Board of School Education <span class="text-pink-600 font-bold ml-1">NEW</span></li>
+          <li>Notification <span class="text-pink-600 font-bold ml-1">NEW</span></li>
+          <li>Land Acquisition - Preliminary Information</li>
+          <li>Details of portfolios to Hon'ble CM/Ministers</li>
+          <li>Corona(COVID19) Updates</li>
+          <li>Corona(COVID19) Updates</li>
+        </ul>
+        <a href="#" class="inline-block px-4 py-2 text-green-700 hover:underline font-semibold pl-8">View More &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD STATISTICS -->
+  <section class="max-w-5xl mx-auto mt-16 mb-24 bg-white rounded-xl shadow-lg p-8 text-center border border-green-200">
+    <h2 class="text-green-900 font-semibold text-2xl mb-2">Dashboard Statistics</h2>
+    <p class="text-gray-700 mb-6">Real-time Insights into Worker Welfare and Service Reach</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-green-900">
+      <div class="flex flex-col items-center space-y-2">
+        <i class="fas fa-users text-4xl"></i>
+        <span class="font-bold text-xl">10,000</span>
+        <p class="text-sm text-gray-600">Active Workers</p>
+      </div>
+      <div class="flex flex-col items-center space-y-2">
+        <i class="fas fa-user-times text-4xl text-orange-500"></i>
+        <span class="font-bold text-xl">3,000</span>
+        <p class="text-sm text-gray-600">Inactive Workers</p>
+      </div>
+      <div class="flex flex-col items-center space-y-2">
+        <i class="fas fa-id-badge text-4xl text-blue-600"></i>
+        <span class="font-bold text-xl">3,000</span>
+        <p class="text-sm text-gray-600">Registered Workers</p>
+      </div>
+      <div class="flex flex-col items-center space-y-2">
+        <i class="fas fa-file-invoice text-4xl text-green-700"></i>
+        <span class="font-bold text-xl">350</span>
+        <p class="text-sm text-gray-600">Scheme Approved</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANT LINKS CAROUSEL -->
+  <section aria-label="Important Links" class="max-w-7xl mx-auto mb-24 px-4">
+    <h3 class="text-center text-green-900 font-semibold mb-6">Important Links</h3>
+    <div class="relative w-full overflow-hidden">
+      <div id="linksCarousel" class="flex gap-6 overflow-x-auto scrollbar-hide snap-x scroll-smooth">
+        <a href="#" class="snap-center flex flex-col items-center justify-center border border-green-300 rounded-full bg-white w-28 h-28 p-3 hover:shadow-lg transition-shadow" title="Jharkhand State Logo">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/47307e83-61b7-4f7f-a9be-b071c30af21d.png" alt="Official black outline lion emblem as symbol of Jharkhand state" class="w-16 h-16 object-contain mb-1" />
+          <span class="text-xs text-green-800 text-center">Jharkhand State</span>
+        </a>
+        <a href="#" class="snap-center flex flex-col items-center justify-center border border-green-300 rounded-full bg-white w-28 h-28 p-3 hover:shadow-lg transition-shadow" title="MyGov India Portal">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/31cadfab-73a0-4b7f-8b41-9068abe5ba29.png" alt="Colorful myGov government of India logo with blue, green, and orange colors" class="w-16 h-16 object-contain mb-1" />
+          <span class="text-xs text-green-800 text-center">myGov Portal</span>
+        </a>
+        <a href="#" class="snap-center flex flex-col items-center justify-center border border-green-300 rounded-full bg-white w-28 h-28 p-3 hover:shadow-lg transition-shadow" title="data.gov.in Open Government Data">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/401ee599-7ea7-4c9a-8386-4a226237eda6.png" alt="Open government data platform logo, text 'data.gov.in' with dot orange icon" class="w-16 h-16 object-contain mb-1" />
+          <span class="text-xs text-green-800 text-center">data.gov.in</span>
+        </a>
+        <a href="#" class="snap-center flex flex-col items-center justify-center border border-green-300 rounded-full bg-white w-28 h-28 p-3 hover:shadow-lg transition-shadow" title="Digital India Logo">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78bfc9d3-a855-4e49-82e5-b0bb82762b59.png" alt="Digital India campaign logo with tricolor Indian flag styled 'i' dot" class="w-16 h-16 object-contain mb-1" />
+          <span class="text-xs text-green-800 text-center">Digital India</span>
+        </a>
+        <a href="#" class="snap-center flex flex-col items-center justify-center border border-green-300 rounded-full bg-white w-28 h-28 p-3 hover:shadow-lg transition-shadow" title="Election Commission of India Logo">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2adfe79-9e5f-4e7d-88ef-15f5e2c72cf2.png" alt="Logo of Election Commission of India with Indian flag colors and stylized ECI letters" class="w-16 h-16 object-contain mb-1" />
+          <span class="text-xs text-green-800 text-center">Election Commission India</span>
+        </a>
+      </div>
+      <button aria-label="Scroll left" id="scrollLeft" class="hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 bg-green-700 text-white rounded-full p-2 shadow-lg hover:bg-green-600 z-10">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button aria-label="Scroll right" id="scrollRight" class="hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 bg-green-700 text-white rounded-full p-2 shadow-lg hover:bg-green-600 z-10">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-green-900 text-green-100 text-sm px-6 pt-10 pb-6 border-t border-green-700">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 justify-between">
+      <div>
+        <h4 class="mb-2 font-semibold border-b border-green-700 pb-1">Get in touch</h4>
+        <address class="not-italic text-green-200 text-xs space-y-1 leading-tight">
+          The Jharkhand Building and Other Construction Workers' Welfare Board (BOCW), Kishanawan, Doranda, Ranchi, Jharkhand.<br/>
+          <a href="tel:7632996057" class="text-green-300 hover:underline">Help Desk: 7632996057</a>
+        </address>
+      </div>
+      <div>
+        <h4 class="mb-2 font-semibold border-b border-green-700 pb-1">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Jharkhand e-Tender</a></li>
+          <li><a href="#" class="hover:underline">e-Aadhaar</a></li>
+          <li><a href="#" class="hover:underline">Jharkhand Govt. Official Website</a></li>
+          <li><a href="#" class="hover:underline">National Portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-2 font-semibold border-b border-green-700 pb-1">Labour & Employment</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Ministry of Labour And Employment</a></li>
+          <li><a href="#" class="hover:underline">Employment Exchange, GoJ</a></li>
+          <li><a href="#" class="hover:underline">Directorate of Employment</a></li>
+          <li><a href="#" class="hover:underline">Pragya Kendra (CSC)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-2 font-semibold border-b border-green-700 pb-1">Additional Resources</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Building and Construction, GoJ</a></li>
+          <li><a href="#" class="hover:underline">ESI Jharkhand</a></li>
+          <li><a href="#" class="hover:underline">Jharkhand Skill Development</a></li>
+          <li><a href="#" class="hover:underline">Business and economy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-8 border-t border-green-700 pt-4 text-xs text-green-400 select-none">
+      For best view, use Google Chrome (30.0 or higher), Mozilla Firefox (30.0 or higher) browsers<br/>
+      Last updated on: 27/03/2025
+    </div>
+  </footer>
+
+  <!-- Back to top Button -->
+  <button id="backToTopBtn" aria-label="Back to top" title="Back to top"
+    class="fixed bottom-10 right-7 z-50 p-3 rounded-full bg-green-700 text-white shadow-lg hover:bg-green-800 transition opacity-0 pointer-events-none">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // HERO Carousel functionality
+    (() => {
+      const slider = document.querySelector('.carousel-slider');
+      const slides = slider.children;
+      const totalSlides = slides.length;
+      const dots = document.querySelectorAll('[data-slide]');
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      function updateSlider(index) {
+        slider.style.transform = \`translateX(-\${index * 100}%)\`;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('bg-green-600', i === index);
+          dot.classList.toggle('bg-green-400', i !== index);
+        });
+        currentIndex = index;
+      }
+
+      function nextSlide() {
+        let nextIndex = (currentIndex + 1) % totalSlides;
+        updateSlider(nextIndex);
+      }
+
+      document.getElementById('prevSlide').addEventListener('click', () => {
+        let prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider(prevIndex);
+        resetAutoSlide();
+      });
+
+      document.getElementById('nextSlide').addEventListener('click', () => {
+        nextSlide();
+        resetAutoSlide();
+      });
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          let index = parseInt(dot.dataset.slide);
+          updateSlider(index);
+          resetAutoSlide();
+        });
+      });
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 6000);
+      }
+      
+      resetAutoSlide();
+      updateSlider(0);
+    })();
+
+    // Important Links carousel scroll buttons
+    (() => {
+      const container = document.getElementById('linksCarousel');
+      const scrollLeftBtn = document.getElementById('scrollLeft');
+      const scrollRightBtn = document.getElementById('scrollRight');
+      const scrollAmount = 150;
+
+      function updateButtons() {
+        scrollLeftBtn.style.display = container.scrollLeft > 0 ? 'flex' : 'none';
+        scrollRightBtn.style.display = container.scrollLeft + container.clientWidth < container.scrollWidth ? 'flex' : 'none';
+      }
+
+      scrollLeftBtn.addEventListener('click', () => {
+        container.scrollBy({left: -scrollAmount, behavior: 'smooth'});
+      });
+      scrollRightBtn.addEventListener('click', () => {
+        container.scrollBy({left: scrollAmount, behavior: 'smooth'});
+      });
+
+      container.addEventListener('scroll', updateButtons);
+      window.addEventListener('resize', updateButtons);
+      updateButtons();
+    })();
+
+    // Back to top button
+    (() => {
+      const btn = document.getElementById('backToTopBtn');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          btn.classList.remove('opacity-0', 'pointer-events-none');
+          btn.classList.add('opacity-100');
+        } else {
+          btn.classList.add('opacity-0', 'pointer-events-none');
+          btn.classList.remove('opacity-100');
+        }
+      });
+      btn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+    })();
+
+  </script>
+
+</body>
+</html>
+
